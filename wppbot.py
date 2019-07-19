@@ -1,10 +1,5 @@
 import os
 import time
-import re
-import requests
-import json
-from chatterbot.trainers import ListTrainer
-from chatterbot.trainers import Trainer
 from chatterbot import ChatBot
 from selenium import webdriver
 
@@ -16,7 +11,6 @@ class wppbot:
     def __init__(self, nome_bot):
         print(self.dir_path)
         self.bot = ChatBot(nome_bot)
-        #self.bot.set_trainer(ListTrainer)
 
         self.chrome = self.dir_path + '\chromedriver.exe'
 
@@ -28,7 +22,7 @@ class wppbot:
     def inicia(self, nome_contato):
         # Entrar no whatsapp web
         self.driver.get('https://web.whatsapp.com/')
-        self.driver.implicitly_wait(15)
+        self.driver.implicitly_wait(10)
 
         # Procurar pelo contato passado como parametro
         self.caixa_de_pesquisa = self.driver.find_element_by_class_name("_2zCfw")
@@ -36,7 +30,6 @@ class wppbot:
         time.sleep(2)
 
         # Clicar no contato passado como parametro
-        print(nome_contato)
         self.contato = self.driver.find_element_by_xpath('//span[@title = "{}"]'.format(nome_contato))
         self.contato.click()
         time.sleep(2)
@@ -56,76 +49,92 @@ class wppbot:
             return False
 
     def escuta(self):
+        time.sleep(10)
         post = self.driver.find_elements_by_class_name("_1zGQT")
         ultimo = len(post) - 1
         texto = post[ultimo].find_element_by_css_selector('span.selectable-text').text
         return texto
 
-    def aprender(self, ultimo_texto, frase_inicial, frase_final, frase_erro):
-        self.caixa_de_mensagem = self.driver.find_element_by_class_name("_2S1VP")
-        self.caixa_de_mensagem.send_keys(frase_inicial)
-        time.sleep(1)
-        self.botao_enviar = self.driver.find_element_by_class_name("_35EW6")
-        self.botao_enviar.click()
-        self.x = True
-        while self.x == True:
-            texto = self.escuta()
-
-            if texto != ultimo_texto and re.match(r'^::', texto):
-                if texto.find('?') != -1:
-                    ultimo_texto = texto
-                    texto = texto.replace('::', '')
-                    texto = texto.lower()
-                    texto = texto.replace('?', '?*')
-                    texto = texto.split('*')
-                    novo = []
-                    for elemento in texto:
-                        elemento = elemento.strip()
-                        novo.append(elemento)
-
-                    self.bot.train(novo)
-                    self.caixa_de_mensagem.send_keys(frase_final)
-                    time.sleep(1)
-                    self.botao_enviar = self.driver.find_element_by_class_name("_35EW6")
-                    self.botao_enviar.click()
-                    self.x = False
-                    return ultimo_texto
-                else:
-                    self.caixa_de_mensagem.send_keys(frase_erro)
-                    time.sleep(1)
-                    self.botao_enviar = self.driver.find_element_by_class_name("_35EW6")
-                    self.botao_enviar.click()
-                    self.x = False
-                    return ultimo_texto
-            else:
-                ultimo_texto = texto
-
-    def responde(self, texto):
-        response = self.bot.get_response(texto)
-        response = str(response)
-        response = 'bot: ' + response
-        self.caixa_de_mensagem = self.driver.find_element_by_class_name('_2S1VP')
-        self.caixa_de_mensagem.send_keys(response)
-        time.sleep(1)
-        self.botao_enviar = self.driver.find_element_by_class_name('_35EW6')
-        self.botao_enviar.click()
-
-    def menu(self):
+    def menu(self, nome_contato):
         self.caixa_de_mensagem = self.driver.find_element_by_class_name("_3u328")
-        menu = "Bot: Olá, selecione uma das opções abaixo para conhecer mais sobre a Pulsar: " \
-               + "\n1 - Histórico" \
-               + "\n2 - Localização" \
-               + "\n3 - Serviços" \
-               + "\n4 - Preços" \
-               + "\n5 - Agendar consultas" \
-               + "\n6 - Falar com atendente"
+        menu = nome_contato + ", escolha e digite uma opção do menu para dar continuidade ao seu atendimento:\n" \
+               "1 - Histórico\n" \
+               "2 - Localização\n" \
+               "3 - Serviços\n" \
+               "4 - Agendar exames\n" \
+               "5 - Falar com atendente\n" \
+               "6 - Contato\n" \
+               "0 - Voltar ao menu inicial"
         self.caixa_de_mensagem.send_keys(menu)
         time.sleep(2)
         self.botao_enviar = self.driver.find_element_by_class_name("_3M-N-")
         self.botao_enviar.click()
         time.sleep(2)
 
-    def treina(self, nome_pasta):
-        for treino in os.listdir(nome_pasta):
-            conversas = open(nome_pasta + '/' + treino, 'r').readlines()
-            self.bot.train(conversas)
+    def historico(self, nome_contato):
+        self.caixa_de_mensagem = self.driver.find_element_by_class_name("_3u328")
+        historico = nome_contato + ", nós éramos um grupo de médicos, um grupo de amigos, porém com um sonho em comum: queríamos continuar " \
+                    "a praticar a boa medicina, com qualidade técnica, com comprometimento, com olhar humano aos nossos pacientes, " \
+                    "mas queríamos também tornar esse serviço acessível a um maior número de pessoas. Esse sonho ganhou força, " \
+                    "e hoje já é realidade, é a PULSAR."
+        self.caixa_de_mensagem.send_keys(historico)
+        time.sleep(2)
+        self.botao_enviar = self.driver.find_element_by_class_name("_3M-N-")
+        self.botao_enviar.click()
+        time.sleep(2)
+
+    def localizacao(self):
+        self.caixa_de_mensagem = self.driver.find_element_by_class_name("_3u328")
+        localizacao = "Estamos localizadados na Rua Miguel Faraday (Antiga rua Urariá) 29b, " \
+                    "São José Operário, ao lado do 9DP. Manaus/AM. Brasil. " \
+                    "Faça-nos uma visita!"
+        self.caixa_de_mensagem.send_keys(localizacao)
+        time.sleep(2)
+        self.botao_enviar = self.driver.find_element_by_class_name("_3M-N-")
+        self.botao_enviar.click()
+        time.sleep(2)
+
+    def servicos(self):
+        self.caixa_de_mensagem = self.driver.find_element_by_class_name("_3u328")
+        servicos = "Oferecemos uma gama de exames para melhor atendê-lo." \
+                   "Atualmente trabalhamos com diversos exames nas areas:" \
+                   " cardiológica," \
+                   " ultrassonografias," \
+                   " exames laboratoriais." \
+                   " Entre em contato com um de nossos atendentes para verificar no que podemos ajudá-lo" \
+                   " ou visite nosso site para conhecer mais sobre os exames:" \
+                   " https://clinicapulsarsaude.com.br/."
+        self.caixa_de_mensagem.send_keys(servicos)
+        time.sleep(2)
+        self.botao_enviar = self.driver.find_element_by_class_name("_3M-N-")
+        self.botao_enviar.click()
+        time.sleep(2)
+
+    def desmarcar(self):
+        self.caixa_de_mensagem = self.driver.find_element_by_class_name("_3u328")
+        desmarcar = "Atendimento de segunda a sexta-feira das 7h às 18h e no sábado das 7h às 12h. Digite sua mensagem e " \
+                   "aguarde alguns instantes para ser atendido."
+        self.caixa_de_mensagem.send_keys(desmarcar)
+        time.sleep(2)
+        self.botao_enviar = self.driver.find_element_by_class_name("_3M-N-")
+        self.botao_enviar.click()
+        time.sleep(2)
+
+    def contato(self):
+        self.caixa_de_mensagem = self.driver.find_element_by_class_name("_3u328")
+        contato = "Atualmente você pode entrar em contato conosco pelos números: " \
+                  "(92) 3347-0731, (92) 98146-0778, (92) 99223-9714"
+        self.caixa_de_mensagem.send_keys(contato)
+        time.sleep(2)
+        self.botao_enviar = self.driver.find_element_by_class_name("_3M-N-")
+        self.botao_enviar.click()
+        time.sleep(2)
+
+    def invalido(self):
+        self.caixa_de_mensagem = self.driver.find_element_by_class_name("_3u328")
+        invalido = "Entrada inválida. Por favor, digite outra opção do nosso Menu."
+        self.caixa_de_mensagem.send_keys(invalido)
+        time.sleep(2)
+        self.botao_enviar = self.driver.find_element_by_class_name("_3M-N-")
+        self.botao_enviar.click()
+        time.sleep(2)
