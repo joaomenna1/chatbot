@@ -3,10 +3,14 @@ from wppbot import wppbot
 
 bot = wppbot('Chatbot')
 bot.inicia('Mamãe')
-bot.saudacao(['Olá, digite seu nome para que a gente possa salvar seu contato!'])
+bot.saudacao(['Olá, aqui quem fala é o chatbot da Pulsar. Digite seu primeiro nome para que a gente possa salvar seu contato!'])
+
+post = bot.driver.find_elements_by_class_name("_1zGQT")
+ultimo = len(post) - 1
+ultima_mensagem = post[ultimo].find_element_by_css_selector('span.selectable-text').text
+
 nome = bot.escuta()
 bot.menu(nome)
-
 controla = True
 
 while controla:
@@ -26,6 +30,6 @@ while controla:
         bot.desmarcar()
         controla = False
     elif opcao == "06" or opcao == "6" or opcao == "seis" or opcao == 'SEIS' or opcao == 'Seis':
-        bot.contato()
+        bot.mandar_contato()
     else:
         bot.invalido()

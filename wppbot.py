@@ -57,7 +57,7 @@ class wppbot:
 
     def menu(self, nome_contato):
         self.caixa_de_mensagem = self.driver.find_element_by_class_name("_3u328")
-        menu = nome_contato + ", escolha e digite uma opção do menu para dar continuidade ao seu atendimento:\n" \
+        menu = nome_contato + ", durante seu atendimento, escolha e digite uma das opções abaixo para dar continuidade ao seu atendimento:\n" \
                "1 - Histórico\n" \
                "2 - Localização\n" \
                "3 - Serviços\n" \
@@ -97,7 +97,7 @@ class wppbot:
     def servicos(self):
         self.caixa_de_mensagem = self.driver.find_element_by_class_name("_3u328")
         servicos = "Oferecemos uma gama de exames para melhor atendê-lo." \
-                   "Atualmente trabalhamos com diversos exames nas areas:" \
+                   " Atualmente trabalhamos com diversos exames nas areas:" \
                    " cardiológica," \
                    " ultrassonografias," \
                    " exames laboratoriais." \
@@ -120,10 +120,9 @@ class wppbot:
         self.botao_enviar.click()
         time.sleep(2)
 
-    def contato(self):
+    def mandar_contato(self):
         self.caixa_de_mensagem = self.driver.find_element_by_class_name("_3u328")
-        contato = "Atualmente você pode entrar em contato conosco pelos números: " \
-                  "(92) 3347-0731, (92) 98146-0778, (92) 99223-9714"
+        contato = "Atualmente você pode entrar em contato conosco pelos números: (92) 3347-0731, (92) 98146-0778, (92) 99223-9714."
         self.caixa_de_mensagem.send_keys(contato)
         time.sleep(2)
         self.botao_enviar = self.driver.find_element_by_class_name("_3M-N-")
