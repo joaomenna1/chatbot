@@ -4,6 +4,7 @@ import datetime
 from chatterbot import ChatBot
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
+from cliente import cliente
 
 class wppbot:
     # caminho da aplicacao
@@ -16,14 +17,12 @@ class wppbot:
 
         self.options = webdriver.ChromeOptions()
         self.options.add_argument(r"user-data-dir=" + self.dir_path + "\profile\wpp")
-        #self.options.add_extension(self.dir_path + "\")
         self.driver = webdriver.Chrome(self.chrome, chrome_options=self.options)
 
     # abre o whatsapp web
     def inicia(self):
-        # entra no whatsapp web
         self.driver.get('https://web.whatsapp.com/')
-        self.driver.implicitly_wait(10)
+        self.driver.implicitly_wait(15)
         time.sleep(3)
 
     # envia a primeira mensagem pra um contato
@@ -45,16 +44,16 @@ class wppbot:
         time.sleep(2)
 
     def escuta(self, penultimo_texto):
-        time.sleep(3)
-        cronometro = 3
+        time.sleep(1)
+        cronometro = 1
         mensagens = self.driver.find_elements_by_class_name("_1zGQT")
         mensagem = len(mensagens) - 1
         ultimo_texto = mensagens[mensagem].find_element_by_css_selector('span.selectable-text').text
 
         while (ultimo_texto == penultimo_texto):
-            time.sleep(3)
-            cronometro = cronometro + 3
-            if (cronometro >= 10):
+            time.sleep(1)
+            cronometro = cronometro + 1
+            if (cronometro >= 3):
                 break
             else:
                 mensagens = self.driver.find_elements_by_class_name("_1zGQT")
@@ -62,7 +61,7 @@ class wppbot:
                 penultimo_texto = ultimo_texto
                 ultimo_texto = mensagens[mensagem].find_element_by_css_selector('span.selectable-text').text
 
-        if (cronometro >= 10):
+        if (cronometro >= 3):
             return None
         else:
             return ultimo_texto
@@ -183,19 +182,17 @@ class wppbot:
         self.botao_enviar.click()
         time.sleep(2)
 
-    def nao_enviou_saudacao(self):
+    def nao_enviou_saudacao(self, client):
         encontrou = True
         hora_atual = datetime.datetime.now().hour
 
         time.sleep(6)
         mensagens = self.driver.find_elements_by_class_name("-N6Gq")
-        print(len(mensagens))
 
         tamanho = len(mensagens)
         controlador = 1
 
         while (controlador < tamanho):
-
             indice = tamanho - controlador
 
             div_texto = mensagens[indice].find_element_by_class_name("_12pGw")
@@ -203,17 +200,15 @@ class wppbot:
 
             div_tempo = mensagens[indice].find_element_by_class_name("_1RNhZ")
             tempo_mensagem = div_tempo.get_attribute('innerText')
-
             hora_mensagem, minuto_mensagem = tempo_mensagem.split(':')
 
-            print("Olhando mensagem: " + texto + ", em: " + hora_mensagem + ":" + minuto_mensagem)
-
             if (texto == "Bom dia, aqui quem fala é o chatbot da Clínica Pulsar. Digite seu primeiro nome para que a gente possa salvar seu contato." or texto == "Boa tarde, aqui quem fala é o chatbot da Clínica Pulsar. Digite seu primeiro nome para que a gente possa salvar seu contato." or texto == "Boa noite, aqui quem fala é o chatbot da Clínica Pulsar. Digite seu primeiro nome para que a gente possa salvar seu contato."):
-                if (hora_atual > int(hora_mensagem) + 12):
-                    # encontrou o cumprimento mas faz muito tempo, entao precisa cumprimentar de novo
+                if (hora_atual > int(hora_mensagem) + 6 or client.estado == 2):
+                    # encontrou o cumprimento mas faz muito tempo ou o atendimento desse cliente ja foi finalizado, entao precisa cumprimentar de novo
                     encontrou = True
+                    client.estado = 1
                 else:
-                    # encontrou o cumprimento mas faz pouco tempo, entao ta escutando uma opcao do cliente
+                    # encontrou o cumprimento mas faz pouco tempo ou o cliente ainda esta sendo atendido, entao ta escutando uma opcao do cliente
                     encontrou = False
 
             controlador += 1
