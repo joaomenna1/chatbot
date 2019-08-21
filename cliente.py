@@ -1,4 +1,3 @@
-import datetime
 
 class cliente:
     def __init__(self, id, hora, minuto, segundo):

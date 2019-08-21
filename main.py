@@ -49,29 +49,29 @@ while True:
         # seleciona um contato em especifico dessa lista
         contato = contatos[i]
 
-        # verifica se tem uma nova mensagem desse contato
         try:
+            # tenta ver se tem uma nova mensagem desse contato
             elemento = contato.find_element_by_class_name("_1ZMSM")
             tem_mensagem_nova = True
         except (NoSuchElementException, StaleElementReferenceException) as error:
             tem_mensagem_nova = False
 
-        # tenta entrar no contato
         try:
+            # tenta clicar no contato
             contato.click()
             clicou = True
-        except StaleElementReferenceException:
+        except (NoSuchElementException, StaleElementReferenceException) as error:
             clicou = False
 
         # se tem uma nova mensagem desse contato e conseguiu clicar nele, entao faz o atendimento
         if (tem_mensagem_nova == True and clicou == True):
-            # recupera o numero (contato nao salvo) ou nome (contato salvo)
-            id = contato.find_element_by_class_name("_3NWy8").get_attribute('innerText')
-
             # recupera hora, minuto e segundo atual
             hora = datetime.datetime.now().hour
             minuto = datetime.datetime.now().minute
             segundo = datetime.datetime.now().second
+
+            # recupera o numero (contato nao salvo) ou nome (contato salvo)
+            id = contato.find_element_by_class_name("_3NWy8").get_attribute('innerText')
 
             # verifica se o id do cliente esta presente na lista de Clientes
             client = recupera_cliente_id(Clientes, id)
@@ -95,7 +95,7 @@ while True:
                 # recupera a ultima mensagem da conversa
                 mensagens = bot.driver.find_elements_by_class_name("-N6Gq")
                 ultimo = len(mensagens) - 1
-                ultima_mensagem = mensagens[ultimo].find_element_by_css_selector('span.selectable-text').text
+                ultima_mensagem = mensagens[ultimo].find_element_by_class_name("_12pGw").get_attribute('innerText')
                 mensagem = ultima_mensagem
 
                 # se precisa enviar saudacao pro cliente entao manda a mensagem
@@ -103,28 +103,27 @@ while True:
                     bot.saudacao()
 
                     if (hora >= 6 and hora <= 12):
-                        ultima_mensagem = "Bom dia, aqui quem fala é o chatbot da Clínica Pulsar. Digite seu primeiro nome para que a gente possa salvar seu contato."
+                        ultima_mensagem = bot.saudacao_manha
                     elif (hora >= 12 and hora <= 18):
-                        ultima_mensagem = "Boa tarde, aqui quem fala é o chatbot da Clínica Pulsar. Digite seu primeiro nome para que a gente possa salvar seu contato."
+                        ultima_mensagem = bot.saudacao_tarde
                     else:
-                        ultima_mensagem = "Boa noite, aqui quem fala é o chatbot da Clínica Pulsar. Digite seu primeiro nome para que a gente possa salvar seu contato."
-
+                        ultima_mensagem = bot.saudacao_noite
                     mensagem = bot.escuta(ultima_mensagem)
 
                 # se a mensagem existir
                 if (mensagem != None):
                     # procura pela penultima mensagem
                     mensagens = bot.driver.find_elements_by_class_name("-N6Gq")
-                    if (len(mensagens) > 2):
-                        penultimo = len(mensagens) - 2
-                        penultima_mensagem = mensagens[penultimo].find_element_by_css_selector('span.selectable-text').text
-                        encontrou_penultima_mensagem = True
+                    if (len(mensagens) > 3):
+                        antepenultimo = len(mensagens) - 3
+                        antepenultima_mensagem = mensagens[antepenultimo].find_element_by_class_name("_12pGw").get_attribute('innerText')
+                        encontrou_antepenultima_mensagem = True
                     else:
-                        encontrou_penultima_mensagem = False
+                        encontrou_antepenultima_mensagem = False
 
-                    if (encontrou_penultima_mensagem == True):
+                    if (encontrou_antepenultima_mensagem == True):
                         # se penultima mensagem foi saudacao, entao a mensagem recebida é o nome do cliente
-                        if (penultima_mensagem == "Bom dia, aqui quem fala é o chatbot da Clínica Pulsar. Digite seu primeiro nome para que a gente possa salvar seu contato." or penultima_mensagem == "Boa tarde, aqui quem fala é o chatbot da Clínica Pulsar. Digite seu primeiro nome para que a gente possa salvar seu contato." or penultima_mensagem == "Boa noite, aqui quem fala é o chatbot da Clínica Pulsar. Digite seu primeiro nome para que a gente possa salvar seu contato."):
+                        if (antepenultima_mensagem == bot.saudacao_manha or antepenultima_mensagem == bot.saudacao_tarde or antepenultima_mensagem == bot.saudacao_noite):
                             nome = mensagem
                             bot.menu(nome) # envia o menu para o cliente
                         else:
@@ -152,10 +151,6 @@ while True:
                                 client.estado = 0
                                 # adiciona o cliente na lista de clientes esperando pra falar com atendimento humano
                                 ClientesEsperando.append(client)
-                            elif opcao == "06" or opcao == "6" or opcao == "seis" or opcao == 'SEIS' or opcao == 'Seis' or opcao == "Contato" or opcao == "contato":
-                                bot.mandar_contato()
-                            else:
-                                bot.invalido()
             # se o cliente esta esperando por atendimento humano, entao desmarca a conversa
             else:
                 ActionChains(bot.driver).context_click(contato).perform()
