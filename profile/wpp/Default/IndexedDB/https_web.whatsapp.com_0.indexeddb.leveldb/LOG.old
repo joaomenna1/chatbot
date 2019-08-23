@@ -1,3 +1,16 @@
-2019/08/21-14:09:48.881 1f3c Reusing MANIFEST C:\Users\ACER\PycharmProjects\chatbot.py\profile\wpp\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/MANIFEST-000001
-2019/08/21-14:09:48.882 1f3c Recovering log #104
-2019/08/21-14:09:48.965 1f3c Reusing old log C:\Users\ACER\PycharmProjects\chatbot.py\profile\wpp\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/000104.log 
+2019/08/23-10:59:41.915 4420 Reusing MANIFEST C:\Users\ACER\PycharmProjects\chatbot.py\profile\wpp\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/MANIFEST-000001
+2019/08/23-10:59:41.916 4420 Recovering log #125
+2019/08/23-10:59:41.918 4420 Reusing old log C:\Users\ACER\PycharmProjects\chatbot.py\profile\wpp\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/000125.log 
+2019/08/23-10:59:44.682 4dcc Compacting 1@1 + 4@2 files
+2019/08/23-10:59:45.313 4dcc Generated table #128@1: 42890 keys, 2226630 bytes
+2019/08/23-10:59:46.436 4dcc Generated table #129@1: 38686 keys, 2230358 bytes
+2019/08/23-10:59:47.129 4dcc Generated table #130@1: 47743 keys, 2233823 bytes
+2019/08/23-10:59:48.104 4dcc Generated table #131@1: 35392 keys, 2578930 bytes
+2019/08/23-10:59:48.196 4dcc Generated table #132@1: 18 keys, 13021 bytes
+2019/08/23-10:59:48.196 4dcc Compacted 1@1 + 4@2 files => 9282762 bytes
+2019/08/23-10:59:48.245 4dcc compacted to: files[ 0 0 5 0 0 0 0 ]
+2019/08/23-10:59:48.245 4dcc Delete type=2 #120
+2019/08/23-10:59:48.246 4dcc Delete type=2 #121
+2019/08/23-10:59:48.247 4dcc Delete type=2 #122
+2019/08/23-10:59:48.279 4dcc Delete type=2 #123
+2019/08/23-10:59:48.280 4dcc Delete type=2 #126

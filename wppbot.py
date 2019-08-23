@@ -211,7 +211,7 @@ class wppbot:
         encontrou = True
         hora_atual = datetime.datetime.now().hour
 
-        time.sleep(6)
+        time.sleep(5)
         mensagens = self.driver.find_elements_by_class_name("-N6Gq")
 
         tamanho = len(mensagens)
