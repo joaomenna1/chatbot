@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 import datetime
 from wppbot import wppbot
 import time
