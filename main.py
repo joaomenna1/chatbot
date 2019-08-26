@@ -1,9 +1,8 @@
 import datetime
 import time
-import xlwt
-import xlrd
 from wppbot import wppbot
 from cliente import cliente
+from datetime import date
 from selenium.webdriver.common.action_chains import ActionChains
 from selenium.common.exceptions import NoSuchElementException
 from selenium.common.exceptions import StaleElementReferenceException
@@ -23,8 +22,12 @@ ClientesEsperando = []
 
 def atualiza_listas_clientes(lst1, lst2, cliente_buscado):
     hora = datetime.datetime.now().hour
+    data_atual = date.today()
+    data = "{}/{}".format(data_atual.day, data_atual.month)
+    dia_atual, mes_atual = data.split('/')
+
     if (len(lst2) > 0 and cliente_buscado.estado == 0):
-        if (hora > cliente_buscado.hora_inicio_atendimento + 6):
+        if (hora > cliente_buscado.hora_inicio_atendimento + 6 and (cliente_buscado.dia_inicio_atendimento == int(dia_atual) and cliente_buscado.mes_inicio_atendimento == int(mes_atual))):
             cliente_buscado.estado = 2
             lst1.remove(cliente_buscado)
             lst2.remove(cliente_buscado)
@@ -58,30 +61,59 @@ while True:
         except (NoSuchElementException, StaleElementReferenceException) as error:
             clicou = False
 
-        # se tem uma nova mensagem desse contato e conseguiu clicar nele, entao faz o atendimento
+        # se conseguiu clicar no contato, entao verifica se precisa fazer o atendimento
         if (clicou == True):
-            # recupera tipo da ultima mensagem (se eh do cliente ou do chatbot)
+            print("Clicou")
             time.sleep(2)
+            tem_nova_mensagem = False
+
             mensagens = bot.driver.find_elements_by_class_name("_1zGQT")
             ultimo = len(mensagens) - 1
-            tipo_ultima_mensagem = mensagens[ultimo].get_attribute('className')
+            # seleciona a ultima mensagem
+            ultima_mensagem = mensagens[ultimo]
+            tipo_ultima_mensagem = ultima_mensagem.get_attribute('className')
 
-            # se a ultima mensagem eh do cliente
-            if("message-in" in tipo_ultima_mensagem):
-                # recupera hora, minuto e segundo atual
-                hora = datetime.datetime.now().hour
-                minuto = datetime.datetime.now().minute
-                segundo = datetime.datetime.now().second
+            # recupera hora, minuto atual
+            hora_atual = datetime.datetime.now().hour
+            minuto_atual = datetime.datetime.now().minute
+            segundo_atual = datetime.datetime.now().second
 
-                # recupera o numero (contato nao salvo) ou nome (contato salvo)
-                id = contato.find_element_by_class_name("_3NWy8").get_attribute('innerText')
+            if (len(mensagens) > 1):
+                # nao eh a primeira mensagem desse cliente
+                # texto_ultima_mensagem = ultima_mensagem.find_element_by_css_selector('span.selectable-text').text
+                print("Entrou no if")
+                # se a ultima mensagem eh do cliente
+                if ('message-in' in tipo_ultima_mensagem):
+                    print("Ultima mensagem da pessoa")
+                    # recupera hora e minuto da mensagem
+                    div_tempo = ultima_mensagem.find_element_by_class_name("_3MYI2")
+                    tempo_mensagem = div_tempo.get_attribute('innerText')
+                    hora_mensagem, minuto_mensagem = tempo_mensagem.split(':')
+                    # print(hora_mensagem + ":" + minuto_mensagem)
+                    if (hora_atual == int(hora_mensagem) and minuto_atual <= int(minuto_mensagem) + 10):
+                        # mensagem enviada nos ultimos 10 minutos
+                        tem_nova_mensagem = True
+                        print("Tem mensagem nova")
+            else:
+                # tem so uma mensagem e eh do cliente
+                if ('message-in' in tipo_ultima_mensagem):
+                    tem_nova_mensagem = True
+                    print("Tem mensagem nova")
 
-                # verifica se o id do cliente esta presente na lista de Clientes
-                client = recupera_cliente_id(Clientes, id)
+            # recupera o numero (contato nao salvo) ou nome (contato salvo)
+            id = contato.find_element_by_class_name("_3NWy8").get_attribute('innerText')
+            # verifica se o id do cliente esta presente na lista de Clientes
+            client = recupera_cliente_id(Clientes, id)
+
+            # se tem uma nova mensagem
+            if(tem_nova_mensagem == True):
+                data_atual = date.today()
+                data = "{}/{}".format(data_atual.day, data_atual.month)
+                dia_atual, mes_atual = data.split('/')
 
                 # se o id nao esta presente na lista, cria o obj cliente e adiciona na lista
                 if (client == None):
-                    client = cliente(id, hora, minuto, segundo)
+                    client = cliente(id, hora_atual, minuto_atual, int(dia_atual), int(mes_atual))
                     Clientes.append(client)
 
                 # verifica se o cliente esta esperando atendimento humano
@@ -102,12 +134,12 @@ while True:
                     mensagem = ultima_mensagem
 
                     # se precisa enviar saudacao pro cliente entao manda a mensagem
-                    if (bot.nao_enviou_saudacao(client)):
+                    if (bot.enviar_saudacao(client)):
                         bot.saudacao()
 
-                        if (hora >= 6 and hora <= 12):
+                        if (hora_atual >= 6 and hora_atual <= 12):
                             ultima_mensagem = bot.saudacao_manha
-                        elif (hora >= 12 and hora <= 18):
+                        elif (hora_atual >= 12 and hora_atual <= 18):
                             ultima_mensagem = bot.saudacao_tarde
                         else:
                             ultima_mensagem = bot.saudacao_noite
@@ -142,22 +174,23 @@ while True:
                                 elif opcao == "02" or opcao == "2" or opcao == "dois" or opcao == 'DOIS' or opcao == 'Dois' or opcao == "Especialidades" or opcao == "especialidades":
                                     bot.especialidades()
                                 elif opcao == "03" or opcao == "3" or opcao == "tres" or opcao == 'TRES' or opcao == 'Tres' or opcao == "Procedimentos" or opcao == "Procedimentos realizados" or opcao == "procedimentos realizados" or opcao == "Procedcimentos Realizados":
-                                    bot.exames()
+                                    bot.procedimentos()
                                 elif opcao == "04" or opcao == "4" or opcao == "quatro" or opcao == 'QUATRO' or opcao == 'Quatro' or opcao == "Exames laboratoriais" or opcao == "Exames Laboratoriais" or opcao == "exames Laboratoriais" or opcao == "exames laboratoriais":
                                     bot.exames_laboratoriais()
                                 elif opcao == "05" or opcao == "5" or opcao == "cinco" or opcao == 'CINCO' or opcao == 'Cinco' or opcao == "agendamento" or opcao == "Agendamento" or opcao == "Falar com atendente" or opcao == "falar com atendente" or opcao == "Falar com atendente (agendamento)" or opcao == "falar com atendente (agendamento)" or opcao == "Falar com atendente(agendamento)" or opcao == "falar com atendente(agendamento)":
                                     bot.atendimento()
                                     # faz a atualizacao da hora, minuto e segundo atual
-                                    client.hora_inicio_atendimento = hora
-                                    client.minuto_inicio_atendimento = minuto
-                                    client.segundo_inicio_atendimento = segundo
+                                    client.hora_inicio_atendimento = hora_atual
+                                    client.minuto_inicio_atendimento = minuto_atual
                                     # muda o estado do cliente
                                     client.estado = 0
                                     # adiciona o cliente na lista de clientes esperando pra falar com atendimento humano
                                     ClientesEsperando.append(client)
                 # se o cliente esta esperando por atendimento humano, entao desmarca a conversa
-                else:
+            if (client != None):
+                if (client.estado == 0):
                     ActionChains(bot.driver).context_click(contato).perform()
                     time.sleep(1)
                     contato.find_element_by_xpath("//*[text()='Marcar como não lida']").click()
+        print("")
         i += 1

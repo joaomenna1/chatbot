@@ -3,8 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="b23e7a06-f7dd-4528-ac4e-39362a5c4e45" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cliente.py" beforeDir="false" afterPath="$PROJECT_DIR$/cliente.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/profile/wpp/BrowserMetrics/BrowserMetrics-5D5D8C1A-3914.pma" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/profile/wpp/BrowserMetrics/BrowserMetrics-5D60001A-3EA8.pma" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/profile/wpp/Default/AutofillStrikeDatabase/LOG" beforeDir="false" afterPath="$PROJECT_DIR$/profile/wpp/Default/AutofillStrikeDatabase/LOG" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/profile/wpp/Default/AutofillStrikeDatabase/LOG.old" beforeDir="false" afterPath="$PROJECT_DIR$/profile/wpp/Default/AutofillStrikeDatabase/LOG.old" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/profile/wpp/Default/BudgetDatabase/LOG" beforeDir="false" afterPath="$PROJECT_DIR$/profile/wpp/Default/BudgetDatabase/LOG" afterDir="false" />
@@ -13,9 +14,7 @@
       <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Cache/data_1" beforeDir="false" afterPath="$PROJECT_DIR$/profile/wpp/Default/Cache/data_1" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Cache/data_2" beforeDir="false" afterPath="$PROJECT_DIR$/profile/wpp/Default/Cache/data_2" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Cache/data_3" beforeDir="false" afterPath="$PROJECT_DIR$/profile/wpp/Default/Cache/data_3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Cache/f_0002cd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Cache/f_000694" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Code Cache/js/4911c8fd09ced698_0" beforeDir="false" afterPath="$PROJECT_DIR$/profile/wpp/Default/Code Cache/js/4911c8fd09ced698_0" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Cache/f_0007d0" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Code Cache/js/index-dir/the-real-index" beforeDir="false" afterPath="$PROJECT_DIR$/profile/wpp/Default/Code Cache/js/index-dir/the-real-index" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Cookies" beforeDir="false" afterPath="$PROJECT_DIR$/profile/wpp/Default/Cookies" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Current Session" beforeDir="false" afterPath="$PROJECT_DIR$/profile/wpp/Default/Current Session" afterDir="false" />
@@ -24,7 +23,6 @@
       <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Extension Rules/LOG.old" beforeDir="false" afterPath="$PROJECT_DIR$/profile/wpp/Default/Extension Rules/LOG.old" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Extension State/LOG" beforeDir="false" afterPath="$PROJECT_DIR$/profile/wpp/Default/Extension State/LOG" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Extension State/LOG.old" beforeDir="false" afterPath="$PROJECT_DIR$/profile/wpp/Default/Extension State/LOG.old" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Favicons" beforeDir="false" afterPath="$PROJECT_DIR$/profile/wpp/Default/Favicons" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Feature Engagement Tracker/AvailabilityDB/LOG" beforeDir="false" afterPath="$PROJECT_DIR$/profile/wpp/Default/Feature Engagement Tracker/AvailabilityDB/LOG" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Feature Engagement Tracker/AvailabilityDB/LOG.old" beforeDir="false" afterPath="$PROJECT_DIR$/profile/wpp/Default/Feature Engagement Tracker/AvailabilityDB/LOG.old" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Feature Engagement Tracker/EventDB/LOG" beforeDir="false" afterPath="$PROJECT_DIR$/profile/wpp/Default/Feature Engagement Tracker/EventDB/LOG" afterDir="false" />
@@ -34,140 +32,127 @@
       <change beforePath="$PROJECT_DIR$/profile/wpp/Default/GPUCache/data_0" beforeDir="false" afterPath="$PROJECT_DIR$/profile/wpp/Default/GPUCache/data_0" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/profile/wpp/Default/GPUCache/data_1" beforeDir="false" afterPath="$PROJECT_DIR$/profile/wpp/Default/GPUCache/data_1" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/profile/wpp/Default/GPUCache/data_3" beforeDir="false" afterPath="$PROJECT_DIR$/profile/wpp/Default/GPUCache/data_3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/GPUCache/f_000010" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/GPUCache/f_000012" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/GPUCache/f_000017" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/GPUCache/f_00001a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/GPUCache/f_00000a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/GPUCache/f_000013" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/GPUCache/f_000015" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/GPUCache/f_000020" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/profile/wpp/Default/History" beforeDir="false" afterPath="$PROJECT_DIR$/profile/wpp/Default/History" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/profile/wpp/Default/History Provider Cache" beforeDir="false" afterPath="$PROJECT_DIR$/profile/wpp/Default/History Provider Cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/IndexedDB/https_web.whatsapp.com_0.indexeddb.leveldb/000106.ldb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/IndexedDB/https_web.whatsapp.com_0.indexeddb.leveldb/000107.ldb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/IndexedDB/https_web.whatsapp.com_0.indexeddb.leveldb/000108.ldb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/IndexedDB/https_web.whatsapp.com_0.indexeddb.leveldb/000128.ldb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/IndexedDB/https_web.whatsapp.com_0.indexeddb.leveldb/000129.ldb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/IndexedDB/https_web.whatsapp.com_0.indexeddb.leveldb/000130.ldb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/IndexedDB/https_web.whatsapp.com_0.indexeddb.leveldb/000131.ldb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/IndexedDB/https_web.whatsapp.com_0.indexeddb.leveldb/000132.ldb" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/profile/wpp/Default/IndexedDB/https_web.whatsapp.com_0.indexeddb.leveldb/LOG" beforeDir="false" afterPath="$PROJECT_DIR$/profile/wpp/Default/IndexedDB/https_web.whatsapp.com_0.indexeddb.leveldb/LOG" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/profile/wpp/Default/IndexedDB/https_web.whatsapp.com_0.indexeddb.leveldb/LOG.old" beforeDir="false" afterPath="$PROJECT_DIR$/profile/wpp/Default/IndexedDB/https_web.whatsapp.com_0.indexeddb.leveldb/LOG.old" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/profile/wpp/Default/IndexedDB/https_web.whatsapp.com_0.indexeddb.leveldb/MANIFEST-000001" beforeDir="false" afterPath="$PROJECT_DIR$/profile/wpp/Default/IndexedDB/https_web.whatsapp.com_0.indexeddb.leveldb/MANIFEST-000001" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Last Session" beforeDir="false" afterPath="$PROJECT_DIR$/profile/wpp/Default/Last Session" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Last Tabs" beforeDir="false" afterPath="$PROJECT_DIR$/profile/wpp/Default/Last Tabs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Local Storage/leveldb/000095.ldb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Local Storage/leveldb/000097.ldb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Local Storage/leveldb/000100.ldb" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Local Storage/leveldb/LOG" beforeDir="false" afterPath="$PROJECT_DIR$/profile/wpp/Default/Local Storage/leveldb/LOG" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Local Storage/leveldb/LOG.old" beforeDir="false" afterPath="$PROJECT_DIR$/profile/wpp/Default/Local Storage/leveldb/LOG.old" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Local Storage/leveldb/MANIFEST-000001" beforeDir="false" afterPath="$PROJECT_DIR$/profile/wpp/Default/Local Storage/leveldb/MANIFEST-000001" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Login Data" beforeDir="false" afterPath="$PROJECT_DIR$/profile/wpp/Default/Login Data" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Network Action Predictor" beforeDir="false" afterPath="$PROJECT_DIR$/profile/wpp/Default/Network Action Predictor" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Network Persistent State" beforeDir="false" afterPath="$PROJECT_DIR$/profile/wpp/Default/Network Persistent State" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Platform Notifications/LOG" beforeDir="false" afterPath="$PROJECT_DIR$/profile/wpp/Default/Platform Notifications/LOG" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Platform Notifications/LOG.old" beforeDir="false" afterPath="$PROJECT_DIR$/profile/wpp/Default/Platform Notifications/LOG.old" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Preferences" beforeDir="false" afterPath="$PROJECT_DIR$/profile/wpp/Default/Preferences" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/profile/wpp/Default/QuotaManager" beforeDir="false" afterPath="$PROJECT_DIR$/profile/wpp/Default/QuotaManager" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Secure Preferences" beforeDir="false" afterPath="$PROJECT_DIR$/profile/wpp/Default/Secure Preferences" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/33b9976a-d706-4409-9cfb-6a438e4f7ede/0c3b076c554ac7c5_0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/33b9976a-d706-4409-9cfb-6a438e4f7ede/0c63076bfbda834e_0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/33b9976a-d706-4409-9cfb-6a438e4f7ede/0e54913e447d93d0_0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/33b9976a-d706-4409-9cfb-6a438e4f7ede/14be5cf3ee75c721_0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/33b9976a-d706-4409-9cfb-6a438e4f7ede/15e3775201d8597d_0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/33b9976a-d706-4409-9cfb-6a438e4f7ede/1a6c88c152075c66_0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/33b9976a-d706-4409-9cfb-6a438e4f7ede/1d4d72851e31ed8c_0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/33b9976a-d706-4409-9cfb-6a438e4f7ede/2f96d388dbd4d54e_0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/33b9976a-d706-4409-9cfb-6a438e4f7ede/3425662a19cf1e6c_0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/33b9976a-d706-4409-9cfb-6a438e4f7ede/36af177716346b96_0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/33b9976a-d706-4409-9cfb-6a438e4f7ede/39784bb5e5aeba8d_0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/33b9976a-d706-4409-9cfb-6a438e4f7ede/41756ccaa9c90de7_0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/33b9976a-d706-4409-9cfb-6a438e4f7ede/4a932da89c1dd845_0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/33b9976a-d706-4409-9cfb-6a438e4f7ede/4af07458009ef56c_0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/33b9976a-d706-4409-9cfb-6a438e4f7ede/5058fd120a91d6aa_0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/33b9976a-d706-4409-9cfb-6a438e4f7ede/5308cdb2bd4e916b_0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/33b9976a-d706-4409-9cfb-6a438e4f7ede/55ad3b8ef0228f54_0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/33b9976a-d706-4409-9cfb-6a438e4f7ede/5d6d92709de6ba12_0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/33b9976a-d706-4409-9cfb-6a438e4f7ede/62a9f17d80622f0f_0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/33b9976a-d706-4409-9cfb-6a438e4f7ede/6899f0cedc591e61_0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/33b9976a-d706-4409-9cfb-6a438e4f7ede/68c7ce7cd665c7f4_0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/33b9976a-d706-4409-9cfb-6a438e4f7ede/7d8060376b13bede_0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/33b9976a-d706-4409-9cfb-6a438e4f7ede/84a590717d07bc5e_0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/33b9976a-d706-4409-9cfb-6a438e4f7ede/8a9525a9c6eca649_0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/33b9976a-d706-4409-9cfb-6a438e4f7ede/8cebdb2ea17bccc3_0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/33b9976a-d706-4409-9cfb-6a438e4f7ede/93cbe301256d52d0_0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/33b9976a-d706-4409-9cfb-6a438e4f7ede/9814d39ac8282983_0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/33b9976a-d706-4409-9cfb-6a438e4f7ede/9b46efbf91090447_0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/33b9976a-d706-4409-9cfb-6a438e4f7ede/a80bf9120e7999e0_0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/33b9976a-d706-4409-9cfb-6a438e4f7ede/bc25af26ea25f421_0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/33b9976a-d706-4409-9cfb-6a438e4f7ede/bec021081dbf1056_0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/33b9976a-d706-4409-9cfb-6a438e4f7ede/d5667839401b9951_0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/33b9976a-d706-4409-9cfb-6a438e4f7ede/d9fd80cf5a012f8a_0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/33b9976a-d706-4409-9cfb-6a438e4f7ede/e9fa28f9b862bc34_0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/33b9976a-d706-4409-9cfb-6a438e4f7ede/f333fdf1092794e9_0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/33b9976a-d706-4409-9cfb-6a438e4f7ede/index" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/33b9976a-d706-4409-9cfb-6a438e4f7ede/index-dir/the-real-index" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/6297c470-b14e-4e9d-a779-c3e0b27c3f41/index-dir/the-real-index" beforeDir="false" afterPath="$PROJECT_DIR$/profile/wpp/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/6297c470-b14e-4e9d-a779-c3e0b27c3f41/index-dir/the-real-index" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/84ebb544-ffdc-404a-a6f9-ee159fac73ba/0f518df62c5109cf_0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/84ebb544-ffdc-404a-a6f9-ee159fac73ba/13f1594a59301845_0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/84ebb544-ffdc-404a-a6f9-ee159fac73ba/192775faa149869a_0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/84ebb544-ffdc-404a-a6f9-ee159fac73ba/1a060e41cd1ecd33_0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/84ebb544-ffdc-404a-a6f9-ee159fac73ba/1a060e41cd1ecd33_1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/84ebb544-ffdc-404a-a6f9-ee159fac73ba/1eab8514247f24ec_0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/84ebb544-ffdc-404a-a6f9-ee159fac73ba/233a282b6817af12_0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/84ebb544-ffdc-404a-a6f9-ee159fac73ba/26b2d28768db730e_0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/84ebb544-ffdc-404a-a6f9-ee159fac73ba/27ae871cf1e2a3e9_0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/84ebb544-ffdc-404a-a6f9-ee159fac73ba/2faa709cf5730205_0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/84ebb544-ffdc-404a-a6f9-ee159fac73ba/3cba8f3ade6d74d6_0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/84ebb544-ffdc-404a-a6f9-ee159fac73ba/3cba8f3ade6d74d6_1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/84ebb544-ffdc-404a-a6f9-ee159fac73ba/3ccbac4ccbd3bfb0_0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/84ebb544-ffdc-404a-a6f9-ee159fac73ba/42b5c833ab3eae2f_0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/84ebb544-ffdc-404a-a6f9-ee159fac73ba/42b5c833ab3eae2f_1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/84ebb544-ffdc-404a-a6f9-ee159fac73ba/48bd097b49e83fbb_0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/84ebb544-ffdc-404a-a6f9-ee159fac73ba/4b173765fefc3f16_0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/84ebb544-ffdc-404a-a6f9-ee159fac73ba/4cb2b6869e3b64d5_0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/84ebb544-ffdc-404a-a6f9-ee159fac73ba/50ec29588fe8e75d_0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/84ebb544-ffdc-404a-a6f9-ee159fac73ba/51cc19e307a67aa6_0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/84ebb544-ffdc-404a-a6f9-ee159fac73ba/51cc19e307a67aa6_1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/84ebb544-ffdc-404a-a6f9-ee159fac73ba/528e52f58a38230f_0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/84ebb544-ffdc-404a-a6f9-ee159fac73ba/563281c054f4fc9c_0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/84ebb544-ffdc-404a-a6f9-ee159fac73ba/5b3372747722fd33_0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/84ebb544-ffdc-404a-a6f9-ee159fac73ba/5de3ad39a1e74f0c_0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/84ebb544-ffdc-404a-a6f9-ee159fac73ba/742f177b143d2eb1_0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/84ebb544-ffdc-404a-a6f9-ee159fac73ba/75d88226f2ec1218_0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/84ebb544-ffdc-404a-a6f9-ee159fac73ba/79192c3adf4730d6_0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/84ebb544-ffdc-404a-a6f9-ee159fac73ba/7f5ec8d09b92c79b_0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/84ebb544-ffdc-404a-a6f9-ee159fac73ba/7fd1ed80b3e66f1d_0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/84ebb544-ffdc-404a-a6f9-ee159fac73ba/7fd1ed80b3e66f1d_1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/84ebb544-ffdc-404a-a6f9-ee159fac73ba/82e1d3a9327e4d03_0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/84ebb544-ffdc-404a-a6f9-ee159fac73ba/83b2cbc7f194868b_0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/84ebb544-ffdc-404a-a6f9-ee159fac73ba/8b3ff155c4d1ac3d_0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/84ebb544-ffdc-404a-a6f9-ee159fac73ba/8b3ff155c4d1ac3d_1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/84ebb544-ffdc-404a-a6f9-ee159fac73ba/8dbaf8815960faae_0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/84ebb544-ffdc-404a-a6f9-ee159fac73ba/9495df067529f6f4_0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/84ebb544-ffdc-404a-a6f9-ee159fac73ba/9495df067529f6f4_1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/84ebb544-ffdc-404a-a6f9-ee159fac73ba/95af8bc3ee904fc8_0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/84ebb544-ffdc-404a-a6f9-ee159fac73ba/9a62fd6f13fc6973_0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/84ebb544-ffdc-404a-a6f9-ee159fac73ba/9d0ce32ff57788ed_0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/84ebb544-ffdc-404a-a6f9-ee159fac73ba/9d0ce32ff57788ed_1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/84ebb544-ffdc-404a-a6f9-ee159fac73ba/ae47718f84f2878f_0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/84ebb544-ffdc-404a-a6f9-ee159fac73ba/b1598e8fa2b98933_0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/84ebb544-ffdc-404a-a6f9-ee159fac73ba/bbb5efed11145199_0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/84ebb544-ffdc-404a-a6f9-ee159fac73ba/bd5ffbd846a8cdfd_0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/84ebb544-ffdc-404a-a6f9-ee159fac73ba/be18ff7dacc10725_0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/84ebb544-ffdc-404a-a6f9-ee159fac73ba/cdd96560e0290437_0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/84ebb544-ffdc-404a-a6f9-ee159fac73ba/dcd82e4992bdd810_0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/84ebb544-ffdc-404a-a6f9-ee159fac73ba/dd328f583bc5813b_0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/84ebb544-ffdc-404a-a6f9-ee159fac73ba/dd328f583bc5813b_1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/84ebb544-ffdc-404a-a6f9-ee159fac73ba/deaf54032360c4e0_0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/84ebb544-ffdc-404a-a6f9-ee159fac73ba/deaf54032360c4e0_1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/84ebb544-ffdc-404a-a6f9-ee159fac73ba/f2515d3808d39ee0_0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/84ebb544-ffdc-404a-a6f9-ee159fac73ba/index" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/84ebb544-ffdc-404a-a6f9-ee159fac73ba/index-dir/the-real-index" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/c84609a3-9e58-44b5-9831-7c0948e415c0/0ee1035db9746619_0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/2094125e-7645-4eb3-a6c9-f5deb97c1ddc/0f518df62c5109cf_0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/2094125e-7645-4eb3-a6c9-f5deb97c1ddc/13f1594a59301845_0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/2094125e-7645-4eb3-a6c9-f5deb97c1ddc/15c8a8c718420207_0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/2094125e-7645-4eb3-a6c9-f5deb97c1ddc/192775faa149869a_0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/2094125e-7645-4eb3-a6c9-f5deb97c1ddc/1a060e41cd1ecd33_0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/2094125e-7645-4eb3-a6c9-f5deb97c1ddc/1a060e41cd1ecd33_1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/2094125e-7645-4eb3-a6c9-f5deb97c1ddc/26b2d28768db730e_0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/2094125e-7645-4eb3-a6c9-f5deb97c1ddc/3632fd66ab72289a_0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/2094125e-7645-4eb3-a6c9-f5deb97c1ddc/3cba8f3ade6d74d6_0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/2094125e-7645-4eb3-a6c9-f5deb97c1ddc/3cba8f3ade6d74d6_1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/2094125e-7645-4eb3-a6c9-f5deb97c1ddc/3ccbac4ccbd3bfb0_0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/2094125e-7645-4eb3-a6c9-f5deb97c1ddc/42b5c833ab3eae2f_0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/2094125e-7645-4eb3-a6c9-f5deb97c1ddc/42b5c833ab3eae2f_1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/2094125e-7645-4eb3-a6c9-f5deb97c1ddc/48bd097b49e83fbb_0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/2094125e-7645-4eb3-a6c9-f5deb97c1ddc/4b7350b8c3b975ff_0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/2094125e-7645-4eb3-a6c9-f5deb97c1ddc/4cb2b6869e3b64d5_0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/2094125e-7645-4eb3-a6c9-f5deb97c1ddc/50ec29588fe8e75d_0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/2094125e-7645-4eb3-a6c9-f5deb97c1ddc/51cc19e307a67aa6_0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/2094125e-7645-4eb3-a6c9-f5deb97c1ddc/51cc19e307a67aa6_1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/2094125e-7645-4eb3-a6c9-f5deb97c1ddc/528e52f58a38230f_0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/2094125e-7645-4eb3-a6c9-f5deb97c1ddc/563281c054f4fc9c_0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/2094125e-7645-4eb3-a6c9-f5deb97c1ddc/5b3372747722fd33_0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/2094125e-7645-4eb3-a6c9-f5deb97c1ddc/5de3ad39a1e74f0c_0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/2094125e-7645-4eb3-a6c9-f5deb97c1ddc/65e590cee8685837_0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/2094125e-7645-4eb3-a6c9-f5deb97c1ddc/742f177b143d2eb1_0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/2094125e-7645-4eb3-a6c9-f5deb97c1ddc/75d88226f2ec1218_0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/2094125e-7645-4eb3-a6c9-f5deb97c1ddc/79192c3adf4730d6_0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/2094125e-7645-4eb3-a6c9-f5deb97c1ddc/7f5ec8d09b92c79b_0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/2094125e-7645-4eb3-a6c9-f5deb97c1ddc/7fd1ed80b3e66f1d_0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/2094125e-7645-4eb3-a6c9-f5deb97c1ddc/7fd1ed80b3e66f1d_1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/2094125e-7645-4eb3-a6c9-f5deb97c1ddc/82e1d3a9327e4d03_0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/2094125e-7645-4eb3-a6c9-f5deb97c1ddc/83b2cbc7f194868b_0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/2094125e-7645-4eb3-a6c9-f5deb97c1ddc/8903f9c26e9697b5_0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/2094125e-7645-4eb3-a6c9-f5deb97c1ddc/8b3ff155c4d1ac3d_0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/2094125e-7645-4eb3-a6c9-f5deb97c1ddc/8b3ff155c4d1ac3d_1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/2094125e-7645-4eb3-a6c9-f5deb97c1ddc/8dbaf8815960faae_0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/2094125e-7645-4eb3-a6c9-f5deb97c1ddc/9495df067529f6f4_0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/2094125e-7645-4eb3-a6c9-f5deb97c1ddc/9495df067529f6f4_1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/2094125e-7645-4eb3-a6c9-f5deb97c1ddc/95af8bc3ee904fc8_0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/2094125e-7645-4eb3-a6c9-f5deb97c1ddc/9d0ce32ff57788ed_0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/2094125e-7645-4eb3-a6c9-f5deb97c1ddc/9d0ce32ff57788ed_1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/2094125e-7645-4eb3-a6c9-f5deb97c1ddc/ae47718f84f2878f_0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/2094125e-7645-4eb3-a6c9-f5deb97c1ddc/b1598e8fa2b98933_0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/2094125e-7645-4eb3-a6c9-f5deb97c1ddc/bbb5efed11145199_0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/2094125e-7645-4eb3-a6c9-f5deb97c1ddc/be18ff7dacc10725_0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/2094125e-7645-4eb3-a6c9-f5deb97c1ddc/bf8de3af9923014a_0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/2094125e-7645-4eb3-a6c9-f5deb97c1ddc/c4dba3cb7cb0bb6d_0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/2094125e-7645-4eb3-a6c9-f5deb97c1ddc/cdd96560e0290437_0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/2094125e-7645-4eb3-a6c9-f5deb97c1ddc/d42cccd72c1fd183_0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/2094125e-7645-4eb3-a6c9-f5deb97c1ddc/dd328f583bc5813b_0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/2094125e-7645-4eb3-a6c9-f5deb97c1ddc/dd328f583bc5813b_1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/2094125e-7645-4eb3-a6c9-f5deb97c1ddc/deaf54032360c4e0_0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/2094125e-7645-4eb3-a6c9-f5deb97c1ddc/deaf54032360c4e0_1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/2094125e-7645-4eb3-a6c9-f5deb97c1ddc/f2515d3808d39ee0_0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/2094125e-7645-4eb3-a6c9-f5deb97c1ddc/index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/2094125e-7645-4eb3-a6c9-f5deb97c1ddc/index-dir/the-real-index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/a39af27c-c321-4cab-b3af-ca21da7e5fc1/1d4d72851e31ed8c_0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/a39af27c-c321-4cab-b3af-ca21da7e5fc1/2073b9ac7a0242c1_0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/a39af27c-c321-4cab-b3af-ca21da7e5fc1/27e7b724e62b140e_0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/a39af27c-c321-4cab-b3af-ca21da7e5fc1/2a52ed2739599830_0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/a39af27c-c321-4cab-b3af-ca21da7e5fc1/2edc1534397c8888_0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/a39af27c-c321-4cab-b3af-ca21da7e5fc1/36aec073a29a6d98_0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/a39af27c-c321-4cab-b3af-ca21da7e5fc1/39237d12332a772c_0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/a39af27c-c321-4cab-b3af-ca21da7e5fc1/4cdf2f9764279fa4_0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/a39af27c-c321-4cab-b3af-ca21da7e5fc1/5058fd120a91d6aa_0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/a39af27c-c321-4cab-b3af-ca21da7e5fc1/57209e761c6fa17d_0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/a39af27c-c321-4cab-b3af-ca21da7e5fc1/605fffd6cb3a9199_0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/a39af27c-c321-4cab-b3af-ca21da7e5fc1/7aa38f3414c73f1e_0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/a39af27c-c321-4cab-b3af-ca21da7e5fc1/7ae36a37e4662cc7_0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/a39af27c-c321-4cab-b3af-ca21da7e5fc1/7d15a223c4003e2f_0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/a39af27c-c321-4cab-b3af-ca21da7e5fc1/89ddbc0d12f0f86e_0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/a39af27c-c321-4cab-b3af-ca21da7e5fc1/b1160b041ed63df8_0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/a39af27c-c321-4cab-b3af-ca21da7e5fc1/bf22cd4601db2518_0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/a39af27c-c321-4cab-b3af-ca21da7e5fc1/c166adfc907aa027_0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/a39af27c-c321-4cab-b3af-ca21da7e5fc1/c62b52ca5c94c004_0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/a39af27c-c321-4cab-b3af-ca21da7e5fc1/d03dc9bb9c1d8c53_0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/a39af27c-c321-4cab-b3af-ca21da7e5fc1/d9fd80cf5a012f8a_0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/a39af27c-c321-4cab-b3af-ca21da7e5fc1/fc7c17fb0990c2af_0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/a39af27c-c321-4cab-b3af-ca21da7e5fc1/index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/a39af27c-c321-4cab-b3af-ca21da7e5fc1/index-dir/the-real-index" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/c84609a3-9e58-44b5-9831-7c0948e415c0/0f1b84252e365d7a_0" beforeDir="false" afterPath="$PROJECT_DIR$/profile/wpp/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/c84609a3-9e58-44b5-9831-7c0948e415c0/0f1b84252e365d7a_0" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/c84609a3-9e58-44b5-9831-7c0948e415c0/18c805be63f25482_0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/c84609a3-9e58-44b5-9831-7c0948e415c0/197cf98210bc32e1_0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/c84609a3-9e58-44b5-9831-7c0948e415c0/221f9e7570c2388c_0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/c84609a3-9e58-44b5-9831-7c0948e415c0/33b78657f9f54c01_0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/c84609a3-9e58-44b5-9831-7c0948e415c0/3e0a13de7fb7b901_0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/c84609a3-9e58-44b5-9831-7c0948e415c0/5b5cbcc0dd8acd9d_0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/c84609a3-9e58-44b5-9831-7c0948e415c0/6320a7afcd9875d9_0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/c84609a3-9e58-44b5-9831-7c0948e415c0/6c6ec128c7fb8827_0" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/c84609a3-9e58-44b5-9831-7c0948e415c0/a034088ecd4af689_0" beforeDir="false" afterPath="$PROJECT_DIR$/profile/wpp/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/c84609a3-9e58-44b5-9831-7c0948e415c0/a034088ecd4af689_0" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/c84609a3-9e58-44b5-9831-7c0948e415c0/c806316385137ab6_0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/c84609a3-9e58-44b5-9831-7c0948e415c0/d80e9bbd72cdadff_0" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/c84609a3-9e58-44b5-9831-7c0948e415c0/index-dir/the-real-index" beforeDir="false" afterPath="$PROJECT_DIR$/profile/wpp/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/c84609a3-9e58-44b5-9831-7c0948e415c0/index-dir/the-real-index" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/index.txt" beforeDir="false" afterPath="$PROJECT_DIR$/profile/wpp/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/index.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Service Worker/Database/LOG" beforeDir="false" afterPath="$PROJECT_DIR$/profile/wpp/Default/Service Worker/Database/LOG" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Service Worker/Database/LOG.old" beforeDir="false" afterPath="$PROJECT_DIR$/profile/wpp/Default/Service Worker/Database/LOG.old" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Service Worker/ScriptCache/75e158edced18ccc_0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Service Worker/ScriptCache/75e158edced18ccc_1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Service Worker/ScriptCache/bc27a87fbf314a15_0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Service Worker/ScriptCache/bc27a87fbf314a15_1" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Service Worker/ScriptCache/index-dir/the-real-index" beforeDir="false" afterPath="$PROJECT_DIR$/profile/wpp/Default/Service Worker/ScriptCache/index-dir/the-real-index" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Session Storage/LOG" beforeDir="false" afterPath="$PROJECT_DIR$/profile/wpp/Default/Session Storage/LOG" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/profile/wpp/Default/Session Storage/LOG.old" beforeDir="false" afterPath="$PROJECT_DIR$/profile/wpp/Default/Session Storage/LOG.old" afterDir="false" />
@@ -179,7 +164,7 @@
       <change beforePath="$PROJECT_DIR$/profile/wpp/Default/data_reduction_proxy_leveldb/CURRENT" beforeDir="false" afterPath="$PROJECT_DIR$/profile/wpp/Default/data_reduction_proxy_leveldb/CURRENT" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/profile/wpp/Default/data_reduction_proxy_leveldb/LOG" beforeDir="false" afterPath="$PROJECT_DIR$/profile/wpp/Default/data_reduction_proxy_leveldb/LOG" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/profile/wpp/Default/data_reduction_proxy_leveldb/LOG.old" beforeDir="false" afterPath="$PROJECT_DIR$/profile/wpp/Default/data_reduction_proxy_leveldb/LOG.old" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/data_reduction_proxy_leveldb/MANIFEST-000652" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/profile/wpp/Default/data_reduction_proxy_leveldb/MANIFEST-000712" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/profile/wpp/Default/shared_proto_db/metadata/LOG" beforeDir="false" afterPath="$PROJECT_DIR$/profile/wpp/Default/shared_proto_db/metadata/LOG" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/profile/wpp/Default/shared_proto_db/metadata/LOG.old" beforeDir="false" afterPath="$PROJECT_DIR$/profile/wpp/Default/shared_proto_db/metadata/LOG.old" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/profile/wpp/DevToolsActivePort" beforeDir="false" afterPath="$PROJECT_DIR$/profile/wpp/DevToolsActivePort" afterDir="false" />
@@ -187,11 +172,13 @@
       <change beforePath="$PROJECT_DIR$/profile/wpp/ShaderCache/GPUCache/data_0" beforeDir="false" afterPath="$PROJECT_DIR$/profile/wpp/ShaderCache/GPUCache/data_0" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/profile/wpp/ShaderCache/GPUCache/data_1" beforeDir="false" afterPath="$PROJECT_DIR$/profile/wpp/ShaderCache/GPUCache/data_1" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/profile/wpp/ShaderCache/GPUCache/data_3" beforeDir="false" afterPath="$PROJECT_DIR$/profile/wpp/ShaderCache/GPUCache/data_3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/profile/wpp/ShaderCache/GPUCache/f_000004" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/profile/wpp/ShaderCache/GPUCache/f_00000a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/profile/wpp/ShaderCache/GPUCache/f_000012" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/profile/wpp/ShaderCache/GPUCache/f_000013" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/profile/wpp/ShaderCache/GPUCache/f_00001c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/profile/wpp/ShaderCache/GPUCache/f_000011" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/profile/wpp/ShaderCache/GPUCache/f_000014" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/profile/wpp/ShaderCache/GPUCache/f_00001a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/profile/wpp/ShaderCache/GPUCache/f_000020" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/profile/wpp/ShaderCache/GPUCache/f_000021" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/profile/wpp/ShaderCache/GPUCache/f_000022" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/profile/wpp/ShaderCache/GPUCache/f_00002c" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/profile/wpp/chrome_shutdown_ms.txt" beforeDir="false" afterPath="$PROJECT_DIR$/profile/wpp/chrome_shutdown_ms.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wppbot.py" beforeDir="false" afterPath="$PROJECT_DIR$/wppbot.py" afterDir="false" />
     </list>
@@ -203,11 +190,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cliente.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" column="35" selection-start-line="7" selection-start-column="35" selection-end-line="7" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="782">
-              <caret line="46" selection-start-line="46" selection-end-line="46" />
+            <state relative-caret-position="414">
+              <caret line="194" column="17" lean-forward="true" selection-start-line="194" selection-start-column="17" selection-end-line="194" selection-end-column="17" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
               </folding>
@@ -218,8 +214,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wppbot.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="233" column="33" selection-start-line="233" selection-start-column="27" selection-end-line="233" selection-end-column="33" />
+            <state relative-caret-position="136">
+              <caret line="208" lean-forward="true" selection-start-line="208" selection-end-line="208" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
@@ -236,16 +232,15 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/venv/cliente.py" />
-        <option value="$PROJECT_DIR$/cliente.py" />
         <option value="$PROJECT_DIR$/setup.py" />
-        <option value="$PROJECT_DIR$/wppbot.py" />
+        <option value="$PROJECT_DIR$/cliente.py" />
         <option value="$PROJECT_DIR$/main.py" />
+        <option value="$PROJECT_DIR$/wppbot.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="10" />
-    <option name="y" value="20" />
+    <option name="x" value="34" />
     <option name="width" value="1346" />
     <option name="height" value="688" />
   </component>
@@ -255,7 +250,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -267,6 +261,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -344,24 +339,43 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.10714286" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17410715" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.599018" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.049099836" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39934534" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3289689" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.049099836" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.049099836" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Python Console" order="10" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.10714286" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.20130932" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39934534" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3289689" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.049099836" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Python Console" order="10" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout-to-restore>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/chatterbot/chatterbot.py">
@@ -410,14 +424,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cliente.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/setup.py" />
+    <entry file="file://$USER_HOME$/auto-py-to-exe-master/run.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="26" selection-start-line="1" selection-start-column="26" selection-end-line="1" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cliente.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="35" selection-start-line="7" selection-start-column="35" selection-end-line="7" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/wppbot.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="233" column="33" selection-start-line="233" selection-start-column="27" selection-end-line="233" selection-end-column="33" />
+        <state relative-caret-position="136">
+          <caret line="208" lean-forward="true" selection-start-line="208" selection-end-line="208" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
           </folding>
@@ -426,8 +451,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="782">
-          <caret line="46" selection-start-line="46" selection-end-line="46" />
+        <state relative-caret-position="414">
+          <caret line="194" column="17" lean-forward="true" selection-start-line="194" selection-start-column="17" selection-end-line="194" selection-end-column="17" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
           </folding>

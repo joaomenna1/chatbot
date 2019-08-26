@@ -3,6 +3,8 @@ import time
 import datetime
 from chatterbot import ChatBot
 from selenium import webdriver
+from cliente import cliente
+from datetime import date
 from selenium.webdriver.common.keys import Keys
 
 class wppbot:
@@ -130,7 +132,7 @@ class wppbot:
         self.botao_enviar = self.driver.find_element_by_class_name("_1g8sv")
         self.botao_enviar.click()
 
-    def exames(self):
+    def procedimentos(self):
         img = self.dir_path + '\Pulsar-3.png'
         self.driver.find_element_by_css_selector('span[data-icon="clip"]').click()
         attach = self.driver.find_element_by_css_selector('input[type="file"]')
@@ -184,20 +186,12 @@ class wppbot:
     def atendimento(self):
         self.caixa_de_mensagem = self.driver.find_element_by_class_name("_3u328")
         desmarcar = "Atendimento de segunda a sexta-feira das 7h às 18h e no sábado das 7h às 12h. Digite sua mensagem e " \
-                    "aguarde alguns instantes para ser atendido."
+                    "aguarde alguns instantes para ser atendido ou entre em contato pelos nossos telefones."
         self.caixa_de_mensagem.send_keys(desmarcar)
         time.sleep(2)
         self.botao_enviar = self.driver.find_element_by_class_name("_3M-N-")
         self.botao_enviar.click()
         time.sleep(2)
-
-    def mandar_contato(self):
-        self.caixa_de_mensagem = self.driver.find_element_by_class_name("_3u328")
-        contato = "Atualmente você pode entrar em contato conosco pelos números: (92) 3347-0731, (92) 98146-0778, (92) 99223-9714."
-        self.caixa_de_mensagem.send_keys(contato)
-        time.sleep(2)
-        self.botao_enviar = self.driver.find_element_by_class_name("_3M-N-")
-        self.botao_enviar.click()
 
     def invalido(self):
         self.caixa_de_mensagem = self.driver.find_element_by_class_name("_3u328")
@@ -207,38 +201,30 @@ class wppbot:
         self.botao_enviar = self.driver.find_element_by_class_name("_3M-N-")
         self.botao_enviar.click()
 
-    def nao_enviou_saudacao(self, client):
-        encontrou = True
+    def enviar_saudacao(self, client):
         hora_atual = datetime.datetime.now().hour
+        data_atual = date.today()
+        data = "{}/{}".format(data_atual.day, data_atual.month)
+        dia_atual, mes_atual = data.split('/')
 
-        time.sleep(5)
+        time.sleep(7)
         mensagens = self.driver.find_elements_by_class_name("-N6Gq")
-
         tamanho = len(mensagens)
-        controlador = 1
 
-        while (controlador < tamanho):
-            indice = tamanho - controlador
-
-            div_texto = mensagens[indice].find_element_by_class_name("_12pGw")
-            texto = div_texto.get_attribute('innerText')
-
-            div_tempo = mensagens[indice].find_element_by_class_name("_1RNhZ")
-            tempo_mensagem = div_tempo.get_attribute('innerText')
-            hora_mensagem, minuto_mensagem = tempo_mensagem.split(':')
-
-            if (texto == self.saudacao_manha or texto == self.saudacao_tarde or texto == self.saudacao_tarde):
-                if (hora_atual > int(hora_mensagem) + 6 or client.estado == 2):
-                    # encontrou o cumprimento mas faz muito tempo ou o atendimento desse cliente ja foi finalizado, entao precisa cumprimentar de novo
-                    encontrou = True
-                    client.estado = 1
-                else:
-                    # encontrou o cumprimento mas faz pouco tempo ou o cliente ainda esta sendo atendido, entao ta escutando uma opcao do cliente
-                    encontrou = False
-
-            controlador += 1
-
-        if (encontrou == True):
+        if (tamanho == 1):
+            # primeiro contato do cliente, entao envia saudacao
+            return True
+        elif (client.estado == 1):
+            # nao eh primeiro contato do cliente, mas faz muito tempo que enviei a saudacao hoje
+            if (hora_atual >= client.hora_inicio_atendimento + 8 and client.dia_inicio_atendimento == int(dia_atual) and client.mes_inicio_atendimento == int(mes_atual)):
+                return True
+            else:
+                return False
+        elif (client.estado == 2):
+            # o cliente ja teve seu atendimento finalizado e enviou uma nova mensagem, entao troca o estado dele e envia a saudacao
+            client.estado = 1
             return True
         else:
+            # nao eh o primeiro contato do cliente e enviou a saudacao ha pouco tempo, entao nao envia saudacao (cliente enviou mensagem normal)
             return False
+

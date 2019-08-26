@@ -1,9 +1,9 @@
 {
    "+ccWXqaoHJ9hfuXbleKV6FQUrBlyXAJ31BdqjNQJpHs=": {
-      "expiry": 1597945621.206028,
+      "expiry": 1598326867.199413,
       "mode": "force-https",
       "sts_include_subdomains": false,
-      "sts_observed": 1566409621.20603
+      "sts_observed": 1566790867.199415
    },
    "/B8OADqaQvdP9Us9zvxd1iWmf3QkkLEZnRtrldFVjNA=": {
       "expiry": 1597465294.081062,
@@ -24,10 +24,10 @@
       "sts_observed": 1566572614.953136
    },
    "5EdUoB7YUY9zZV+2DkgVXgho8WUvp+D+6KpeUOhNQIM=": {
-      "expiry": 1598108572.817638,
+      "expiry": 1598330646.086626,
       "mode": "force-https",
       "sts_include_subdomains": false,
-      "sts_observed": 1566572572.817641
+      "sts_observed": 1566794646.086631
    },
    "7fSQKEAGL9KU3/odH4NgYx1qpFepm+PQKYCzQTiAuzA=": {
       "expiry": 1580929723.90136,
@@ -36,10 +36,10 @@
       "sts_observed": 1565377723.901366
    },
    "8/RrMmQlCD2Gsp14wUCE1P8r7B2C5+yE0+g79IPyRsc=": {
-      "expiry": 1598108572.764175,
+      "expiry": 1598330646.045793,
       "mode": "force-https",
       "sts_include_subdomains": false,
-      "sts_observed": 1566572572.764178
+      "sts_observed": 1566794646.045798
    },
    "G1R5Q+H3MAjRn0TmeaohlZvRgDFJA8gfQUqC6U1fNqk=": {
       "expiry": 1595891319.425758,
@@ -54,10 +54,10 @@
       "sts_observed": 1565360715.296291
    },
    "IN4MVOmjPvy672m6akZ9Q9TjfMfib7NqhGdJ6K/GKYU=": {
-      "expiry": 1598108594.017069,
+      "expiry": 1598330660.600935,
       "mode": "force-https",
       "sts_include_subdomains": true,
-      "sts_observed": 1566572594.017073
+      "sts_observed": 1566794660.600938
    },
    "LAZkYS46RVRcFiZAzmUJrz6TJHBd4nwE6VxPWfPLYHs=": {
       "expiry": 1576247899.867755,
@@ -66,9 +66,9 @@
       "sts_observed": 1565361499.867758
    },
    "nAuqgR4iEWti7SOdT3UHPl6rmZU/DeaIm38P2O2OkgA=": {
-      "expiry": 1598107624.23869,
+      "expiry": 1598319415.321585,
       "mode": "force-https",
       "sts_include_subdomains": false,
-      "sts_observed": 1566571624.238695
+      "sts_observed": 1566783415.321594
    }
 }
