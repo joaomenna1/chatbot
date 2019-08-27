@@ -20,19 +20,18 @@ ClientesEsperando = []
 
 # 1 - cliente sendo atendido pelo chatbot
 # 0 - cliente esperando falar com atendente
-# 2 - cliente com atendimento finalizado (ja falou com atendimento humano)
 
 def atualiza_listas_clientes(lst1, lst2, cliente_buscado):
-    hora = datetime.datetime.now().hour
+    hora_atual = datetime.datetime.now().hour
     data_atual = date.today()
     data = "{}/{}".format(data_atual.day, data_atual.month)
     dia_atual, mes_atual = data.split('/')
 
-    if (len(lst2) > 0 and cliente_buscado.estado == 0):
-        if (hora > cliente_buscado.hora_inicio_atendimento + 6 and (cliente_buscado.dia_inicio_atendimento == int(dia_atual) and cliente_buscado.mes_inicio_atendimento == int(mes_atual))):
-            cliente_buscado.estado = 2
-            lst1.remove(cliente_buscado)
-            lst2.remove(cliente_buscado)
+    if (len(lst2) > 0 and cliente_buscado != None):
+        if (cliente_buscado.estado == 0):
+            if (hora_atual >= cliente_buscado.hora_inicio_atendimento + 6 and cliente_buscado.dia_inicio_atendimento == int(dia_atual) and cliente_buscado.mes_inicio_atendimento == int(mes_atual)):
+                lst1.remove(cliente_buscado)
+                lst2.remove(cliente_buscado)
 
 def recupera_cliente_id(lst, id):
     cliente = None
@@ -65,7 +64,6 @@ while True:
 
         # se conseguiu clicar no contato, entao verifica se precisa fazer o atendimento
         if (clicou == True):
-            print("Clicou")
             time.sleep(2)
             tem_nova_mensagem = False
 
@@ -78,40 +76,45 @@ while True:
             # recupera hora, minuto atual
             hora_atual = datetime.datetime.now().hour
             minuto_atual = datetime.datetime.now().minute
-            segundo_atual = datetime.datetime.now().second
 
             if (len(mensagens) > 1):
                 # nao eh a primeira mensagem desse cliente
-                # texto_ultima_mensagem = ultima_mensagem.find_element_by_css_selector('span.selectable-text').text
-                print("Entrou no if")
                 # se a ultima mensagem eh do cliente
                 if ('message-in' in tipo_ultima_mensagem):
-                    print("Ultima mensagem da pessoa")
                     # recupera hora e minuto da mensagem
                     div_tempo = ultima_mensagem.find_element_by_class_name("_3MYI2")
                     tempo_mensagem = div_tempo.get_attribute('innerText')
                     hora_mensagem, minuto_mensagem = tempo_mensagem.split(':')
                     # print(hora_mensagem + ":" + minuto_mensagem)
                     if (hora_atual == int(hora_mensagem) and minuto_atual <= int(minuto_mensagem) + 10):
-                        # mensagem enviada nos ultimos 10 minutos
+                        # mensagem nova eh mensagem enviada nos ultimos 10 minutos
                         tem_nova_mensagem = True
-                        print("Tem mensagem nova")
             else:
                 # tem so uma mensagem e eh do cliente
                 if ('message-in' in tipo_ultima_mensagem):
                     tem_nova_mensagem = True
-                    print("Tem mensagem nova")
 
             # recupera o numero (contato nao salvo) ou nome (contato salvo)
-            id = contato.find_element_by_class_name("_3NWy8").get_attribute('innerText')
+            id = bot.driver.find_element_by_class_name("_19vo_").get_attribute('innerText')
+
             # verifica se o id do cliente esta presente na lista de Clientes
             client = recupera_cliente_id(Clientes, id)
 
+            # faz uma atualizacao das listas se o cliente esta esperando por atendimento humano ha muito tempo
+            atualiza_listas_clientes(Clientes, ClientesEsperando, client)
+
             # se tem uma nova mensagem
             if(tem_nova_mensagem == True):
+                time.sleep(5)
+                hora_atual = datetime.datetime.now().hour
+                minuto_atual = datetime.datetime.now().minute
+
                 data_atual = date.today()
                 data = "{}/{}".format(data_atual.day, data_atual.month)
                 dia_atual, mes_atual = data.split('/')
+
+                # verifica se o id do cliente esta presente na lista de Clientes
+                client = recupera_cliente_id(Clientes, id)
 
                 # se o id nao esta presente na lista, cria o obj cliente e adiciona na lista
                 if (client == None):
@@ -121,11 +124,8 @@ while True:
                 # verifica se o cliente esta esperando atendimento humano
                 if (client.estado == 0):
                     cliente_esperando_atendimento_humano = True
-                else:
+                elif (client.estado == 1):
                     cliente_esperando_atendimento_humano = False
-
-                # faz uma atualizacao das listas se o cliente esta esperando por atendimento humano ha muito tempo
-                atualiza_listas_clientes(Clientes, ClientesEsperando, client)
 
                 # se o cliente nao esta esperando atendimento humano, entao ele vai conversar com o chatbot
                 if (cliente_esperando_atendimento_humano == False):
@@ -135,8 +135,9 @@ while True:
                     ultima_mensagem = mensagens[ultimo].find_element_by_class_name("_12pGw").get_attribute('innerText')
                     mensagem = ultima_mensagem
 
-                    # se precisa enviar saudacao pro cliente entao manda a mensagem
-                    if (bot.enviar_saudacao(client)):
+                    # se cliente foi adicionado na lista ha menos de 1 minuto, entao envia saudacao pra ele
+                    # OBS: isso evita enviar a saudacao vezes seguidas (percorrer pelos outros contatos garante o minuto)
+                    if (hora_atual == int(client.hora_inicio_atendimento) and minuto_atual < int(client.minuto_inicio_atendimento) + 1):
                         bot.saudacao()
 
                         if (hora_atual >= 6 and hora_atual <= 12):
@@ -152,7 +153,7 @@ while True:
                     if (mensagem != None):
                         # procura pela antepenultima mensagem
                         mensagens = bot.driver.find_elements_by_class_name("-N6Gq")
-                        if (len(mensagens) > 3):
+                        if (len(mensagens) > 2):
                             antepenultimo = len(mensagens) - 3
                             antepenultima_mensagem = mensagens[antepenultimo].find_element_by_class_name("_12pGw").get_attribute('innerText')
                             encontrou_antepenultima_mensagem = True
@@ -181,18 +182,15 @@ while True:
                                     bot.exames_laboratoriais()
                                 elif opcao == "05" or opcao == "5" or opcao == "cinco" or opcao == 'CINCO' or opcao == 'Cinco' or opcao == "agendamento" or opcao == "Agendamento" or opcao == "Falar com atendente" or opcao == "falar com atendente" or opcao == "Falar com atendente (agendamento)" or opcao == "falar com atendente (agendamento)" or opcao == "Falar com atendente(agendamento)" or opcao == "falar com atendente(agendamento)":
                                     bot.atendimento()
-                                    # faz a atualizacao da hora, minuto e segundo atual
-                                    client.hora_inicio_atendimento = hora_atual
-                                    client.minuto_inicio_atendimento = minuto_atual
                                     # muda o estado do cliente
                                     client.estado = 0
                                     # adiciona o cliente na lista de clientes esperando pra falar com atendimento humano
                                     ClientesEsperando.append(client)
-                # se o cliente esta esperando por atendimento humano, entao desmarca a conversa
             if (client != None):
                 if (client.estado == 0):
+                    # se o cliente esta esperando por atendimento humano, entao desmarca a conversa
                     ActionChains(bot.driver).context_click(contato).perform()
                     time.sleep(1)
-                    contato.find_element_by_xpath("//*[text()='Marcar como não lida']").click()
-        print("")
+                    contato.find_element_by_xpath("//*[text()='Mark as unread']").click()
+        time.sleep(2)
         i += 1

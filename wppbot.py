@@ -4,8 +4,6 @@ import time
 import datetime
 from chatterbot import ChatBot
 from selenium import webdriver
-from cliente import cliente
-from datetime import date
 from selenium.webdriver.common.keys import Keys
 
 class wppbot:
@@ -49,7 +47,7 @@ class wppbot:
         self.botao_enviar = self.driver.find_element_by_class_name("_3M-N-")
         self.botao_enviar.click()
 
-        self.caixa_de_mensagem.send_keys("Para mais informações, entrar em contato pelos números: ")
+        self.caixa_de_mensagem.send_keys("Para mais informações ou dúvidas, entrar em contato pelos números: ")
         self.caixa_de_mensagem.send_keys(Keys.SHIFT, Keys.ENTER)
         self.caixa_de_mensagem.send_keys("Fixo: (92) 3347-0731 ")
         self.caixa_de_mensagem.send_keys(Keys.SHIFT, Keys.ENTER)
@@ -92,8 +90,7 @@ class wppbot:
         time.sleep(2)
 
         self.caixa_de_mensagem = self.driver.find_element_by_class_name("_3u328")
-        self.caixa_de_mensagem.send_keys(
-            nome_contato + ", durante seu atendimento, escolha e digite uma das opções abaixo para dar continuidade ao seu atendimento: ")
+        self.caixa_de_mensagem.send_keys("Sr/Sra " + nome_contato + ", durante seu atendimento, escolha e digite uma das opções abaixo por vez para dar continuidade: ")
         self.caixa_de_mensagem.send_keys(Keys.SHIFT, Keys.ENTER)
         self.caixa_de_mensagem.send_keys(Keys.SHIFT, Keys.ENTER)
         self.caixa_de_mensagem.send_keys("1 - Localização")
@@ -127,7 +124,7 @@ class wppbot:
 
         self.caixa_de_mensagem = self.driver.find_element_by_class_name("_3u328")
         self.caixa_de_mensagem.send_keys(
-            "Aqui estão as especialidades médicas presentes aqui na Clínica Pulsar, que conta com profissionais altamente qualificados e humanizados para melhor atendê-lo.")
+            "Essas são as especialidades médicas presentes aqui na Clínica Pulsar, que conta com profissionais altamente qualificados e humanizados para melhor atendê-lo.")
 
         time.sleep(2)
         self.botao_enviar = self.driver.find_element_by_class_name("_1g8sv")
@@ -156,11 +153,11 @@ class wppbot:
 
         self.caixa_de_mensagem = self.driver.find_element_by_class_name("_3u328")
         self.caixa_de_mensagem.send_keys(
-            "Nossos exames laboratoriais são realizados pelo nosso parceiro RB diagnósticos que utiliza a mais alta tecnologia do mercado e fornece aos nossos clientes atendimento humanizado e de qualidade.")
+            "Nossos exames laboratoriais são realizados pelo nosso parceiro RB Diagnósticos que utiliza a mais alta tecnologia do mercado e fornece aos nossos clientes atendimento humanizado e de qualidade.")
         time.sleep(2)
         self.botao_enviar = self.driver.find_element_by_class_name("_1g8sv")
         self.botao_enviar.click()
-
+        time.sleep(1)
         # seleciona o clip pra enviar um anexo
         self.botao_clip = self.driver.find_element_by_xpath('//*[@id="main"]/header/div[3]/div/div[2]/div/span')
         self.botao_clip.click()
@@ -183,6 +180,7 @@ class wppbot:
         time.sleep(1)
         self.botao_enviar_definitivo = self.driver.find_element_by_class_name("_1g8sv")
         self.botao_enviar_definitivo.click()
+        time.sleep(1)
 
     def atendimento(self):
         self.caixa_de_mensagem = self.driver.find_element_by_class_name("_3u328")
@@ -201,31 +199,3 @@ class wppbot:
         time.sleep(2)
         self.botao_enviar = self.driver.find_element_by_class_name("_3M-N-")
         self.botao_enviar.click()
-
-    def enviar_saudacao(self, client):
-        hora_atual = datetime.datetime.now().hour
-        data_atual = date.today()
-        data = "{}/{}".format(data_atual.day, data_atual.month)
-        dia_atual, mes_atual = data.split('/')
-
-        time.sleep(7)
-        mensagens = self.driver.find_elements_by_class_name("-N6Gq")
-        tamanho = len(mensagens)
-
-        if (tamanho == 1):
-            # primeiro contato do cliente, entao envia saudacao
-            return True
-        elif (client.estado == 1):
-            # nao eh primeiro contato do cliente, mas faz muito tempo que enviei a saudacao hoje
-            if (hora_atual >= client.hora_inicio_atendimento + 8 and client.dia_inicio_atendimento == int(dia_atual) and client.mes_inicio_atendimento == int(mes_atual)):
-                return True
-            else:
-                return False
-        elif (client.estado == 2):
-            # o cliente ja teve seu atendimento finalizado e enviou uma nova mensagem, entao troca o estado dele e envia a saudacao
-            client.estado = 1
-            return True
-        else:
-            # nao eh o primeiro contato do cliente e enviou a saudacao ha pouco tempo, entao nao envia saudacao (cliente enviou mensagem normal)
-            return False
-
