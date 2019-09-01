@@ -11,9 +11,9 @@ class wppbot:
     dir_path = os.getcwd()
 
     # mensagens padronizadas
-    saudacao_manha = "Bom dia, aqui quem fala é o chatbot da Clínica Pulsar. Digite seu nome completo para que a gente possa salvar seu contato."
-    saudacao_tarde = "Boa tarde, aqui quem fala é o chatbot da Clínica Pulsar. Digite seu nome completo para que a gente possa salvar seu contato."
-    saudacao_noite = "Boa noite, aqui quem fala é o chatbot da Clínica Pulsar. Digite seu nome completo para que a gente possa salvar seu contato."
+    saudacao_manha = "Bom dia, aqui quem fala é o chatbot da Clínica Pulsar. Para continuar seu atendimento, digite seu nome completo para que possamos salvar seu contato."
+    saudacao_tarde = "Boa tarde, aqui quem fala é o chatbot da Clínica Pulsar. Para continuar seu atendimento, digite seu nome completo para que possamos salvar seu contato."
+    saudacao_noite = "Boa noite, aqui quem fala é o chatbot da Clínica Pulsar. Para continuar seu atendimento, digite seu nome completo para que possamos salvar seu contato."
 
     def __init__(self, nome_bot):
         self.bot = ChatBot(nome_bot)
@@ -47,7 +47,7 @@ class wppbot:
         self.botao_enviar = self.driver.find_element_by_class_name("_3M-N-")
         self.botao_enviar.click()
 
-        self.caixa_de_mensagem.send_keys("Para mais informações ou dúvidas, entrar em contato pelos números: ")
+        self.caixa_de_mensagem.send_keys("Para mais agilidade no atendimento, entrar em contato pelos números: ")
         self.caixa_de_mensagem.send_keys(Keys.SHIFT, Keys.ENTER)
         self.caixa_de_mensagem.send_keys("Fixo: (92) 3347-0731 ")
         self.caixa_de_mensagem.send_keys(Keys.SHIFT, Keys.ENTER)
@@ -169,10 +169,10 @@ class wppbot:
         # procura na caixa de pesquisa pelo nome do contato
         self.caixa_contato = self.driver.find_element_by_class_name("aymnx")
         self.caixa_pesquisa = self.caixa_contato.find_element_by_class_name("_2zCfw")
-        self.caixa_pesquisa.send_keys("RB Diagnósticos")
+        self.caixa_pesquisa.send_keys("Rb Diagnósticos - Pulsar")
         time.sleep(1)
         # clica no contato
-        self.contato = self.driver.find_element_by_xpath('//span[@title = "{}"]'.format("RB Diagnósticos"))
+        self.contato = self.driver.find_element_by_xpath('//span[@title = "{}"]'.format("Rb Diagnósticos - Pulsar"))
         self.contato.click()
         # envia o contato
         self.botao_visualizar = self.driver.find_element_by_class_name("_1g8sv")
@@ -185,7 +185,7 @@ class wppbot:
     def atendimento(self):
         self.caixa_de_mensagem = self.driver.find_element_by_class_name("_3u328")
         desmarcar = "Atendimento de segunda a sexta-feira das 7h às 18h e no sábado das 7h às 12h. Digite sua mensagem e " \
-                    "aguarde alguns instantes para ser atendido ou entre em contato pelos nossos telefones."
+                    "aguarde alguns instantes para ser atendido."
         self.caixa_de_mensagem.send_keys(desmarcar)
         time.sleep(2)
         self.botao_enviar = self.driver.find_element_by_class_name("_3M-N-")

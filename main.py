@@ -64,6 +64,10 @@ while True:
 
         # se conseguiu clicar no contato, entao verifica se precisa fazer o atendimento
         if (clicou == True):
+            print("Clicou")
+            # recupera id do cliente
+            id = bot.driver.find_element_by_class_name("_19vo_").get_attribute('innerText')
+            print(id)
             time.sleep(2)
             tem_nova_mensagem = False
 
@@ -73,29 +77,55 @@ while True:
             ultima_mensagem = mensagens[ultimo]
             tipo_ultima_mensagem = ultima_mensagem.get_attribute('className')
 
-            # recupera hora, minuto atual
+            # recupera hora, minuto atual (int)
             hora_atual = datetime.datetime.now().hour
             minuto_atual = datetime.datetime.now().minute
 
-            if (len(mensagens) > 1):
+            # recupera dia, mes atual (string)
+            data_atual = date.today()
+            data = "{}/{}".format(data_atual.day, data_atual.month)
+            dia_atual, mes_atual = data.split('/')
+
+            if (len(mensagens) == 1):
+                # tem so uma mensagem e eh do cliente
+                if ('message-in' in tipo_ultima_mensagem):
+                    print("Tamanho 1 e ultima mensagem da pessoa")
+                    tem_nova_mensagem = True
+                    print("Tem mensagem nova")
+            elif (len(mensagens) > 1):
                 # nao eh a primeira mensagem desse cliente
                 # se a ultima mensagem eh do cliente
                 if ('message-in' in tipo_ultima_mensagem):
-                    # recupera hora e minuto da mensagem
+                    print("Tamanho maior 1 e ultima mensagem da pessoa")
+                    # recupera hora e minuto da mensagem (string)
                     div_tempo = ultima_mensagem.find_element_by_class_name("_3MYI2")
-                    tempo_mensagem = div_tempo.get_attribute('innerText')
+                    tempo_mensagem = str(div_tempo.get_attribute('innerText'))
                     hora_mensagem, minuto_mensagem = tempo_mensagem.split(':')
-                    # print(hora_mensagem + ":" + minuto_mensagem)
-                    if (hora_atual == int(hora_mensagem) and minuto_atual <= int(minuto_mensagem) + 10):
-                        # mensagem nova eh mensagem enviada nos ultimos 10 minutos
-                        tem_nova_mensagem = True
-            else:
-                # tem so uma mensagem e eh do cliente
-                if ('message-in' in tipo_ultima_mensagem):
-                    tem_nova_mensagem = True
+                    print("Horário - " + hora_mensagem + ":" + minuto_mensagem)
 
-            # recupera o numero (contato nao salvo) ou nome (contato salvo)
-            id = bot.driver.find_element_by_class_name("_19vo_").get_attribute('innerText')
+                    try:
+                        div_dia = ultima_mensagem.find_element_by_class_name("copyable-text")
+                        data_mensagem = str(div_dia.get_attribute('data-pre-plain-text'))
+                        encontrou_data = True
+                    except NoSuchElementException:
+                            encontrou_data = False
+
+                    if (encontrou_data == True):
+                        # recupera data mensagem (string)
+                        data_mensagem = data_mensagem[8:18]
+                        # OBS: FAZER TROCA NO COMPUTADOR DA PULSAR
+                        dia_mensagem, mes_mensagem, ano_mensagem = data_mensagem.split('/')
+                        print("Data - " + dia_mensagem + "/" + mes_mensagem + "/" + ano_mensagem)
+
+                    if (int(dia_atual) == int(dia_mensagem) and int(mes_atual) == int(mes_mensagem) and hora_atual == int(hora_mensagem) and minuto_atual <= int(minuto_mensagem) + 20):
+                        # mensagem nova eh mensagem enviada nos ultimos 20 minutos
+                        tem_nova_mensagem = True
+                        print("Tem mensagem nova")
+                    elif (int(dia_atual) == int(dia_mensagem) and int(mes_atual) == int(mes_mensagem) and hora_atual == int(hora_mensagem) + 1):
+                        diferenca = 60 - int(minuto_mensagem)
+                        if (diferenca + minuto_atual < 20):
+                            tem_nova_mensagem = True
+                            print("Tem mensagem nova")
 
             # verifica se o id do cliente esta presente na lista de Clientes
             client = recupera_cliente_id(Clientes, id)
@@ -105,7 +135,7 @@ while True:
 
             # se tem uma nova mensagem
             if(tem_nova_mensagem == True):
-                time.sleep(5)
+                time.sleep(3)
                 hora_atual = datetime.datetime.now().hour
                 minuto_atual = datetime.datetime.now().minute
 
@@ -191,6 +221,7 @@ while True:
                     # se o cliente esta esperando por atendimento humano, entao desmarca a conversa
                     ActionChains(bot.driver).context_click(contato).perform()
                     time.sleep(1)
-                    contato.find_element_by_xpath("//*[text()='Mark as unread']").click()
-        time.sleep(2)
+                    contato.find_element_by_xpath("//*[text()='Marcar como não lida']").click()
+        time.sleep(1.5)
+        print("")
         i += 1
