@@ -2,7 +2,6 @@
 import os
 import time
 import datetime
-from chatterbot import ChatBot
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 
@@ -15,9 +14,7 @@ class wppbot:
     saudacao_tarde = "Boa tarde, aqui quem fala é o chatbot da Clínica Pulsar. Para continuar seu atendimento, digite seu nome completo para que possamos salvar seu contato."
     saudacao_noite = "Boa noite, aqui quem fala é o chatbot da Clínica Pulsar. Para continuar seu atendimento, digite seu nome completo para que possamos salvar seu contato."
 
-    def __init__(self, nome_bot):
-        self.bot = ChatBot(nome_bot)
-
+    def __init__(self):
         self.chrome = self.dir_path + '\chromedriver.exe'
 
         self.options = webdriver.ChromeOptions()

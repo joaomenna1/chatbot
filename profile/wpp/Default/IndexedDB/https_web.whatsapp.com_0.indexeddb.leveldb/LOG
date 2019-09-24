@@ -1,3 +1,13 @@
-2019/08/31-16:30:20.149 37b8 Reusing MANIFEST C:\Users\ACER\PycharmProjects\chatbot.py\profile\wpp\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/MANIFEST-000001
-2019/08/31-16:30:20.150 37b8 Recovering log #211
-2019/08/31-16:30:20.199 37b8 Reusing old log C:\Users\ACER\PycharmProjects\chatbot.py\profile\wpp\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/000211.log 
+2019/09/21-10:48:58.194 2e9c Reusing MANIFEST C:\Users\ACER\PycharmProjects\chatbot.py\profile\wpp\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/MANIFEST-000001
+2019/09/21-10:48:58.305 2e9c Recovering log #211
+2019/09/21-10:49:01.374 2e9c Reusing old log C:\Users\ACER\PycharmProjects\chatbot.py\profile\wpp\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/000211.log 
+2019/09/21-10:49:03.523 3160 Level-0 table #224: started
+2019/09/21-10:49:03.957 3160 Level-0 table #224: 1604861 bytes OK
+2019/09/21-10:49:04.471 3160 Delete type=0 #211
+2019/09/21-10:49:04.864 3160 Compacting 1@1 + 8@2 files
+2019/09/21-10:49:08.450 3160 Generated table #225@1: 42610 keys, 2228636 bytes
+2019/09/21-10:49:10.430 3160 Generated table #226@1: 38677 keys, 2232622 bytes
+2019/09/21-10:49:14.231 3160 Generated table #227@1: 38502 keys, 2233077 bytes
+2019/09/21-10:49:17.467 3160 Generated table #228@1: 38263 keys, 2232281 bytes
+2019/09/21-10:49:18.991 3160 Generated table #229@1: 57759 keys, 2237262 bytes
+2019/09/21-10:49:18.991 3160 compacted to: files[ 0 1 8 0 0 0 0 ]
