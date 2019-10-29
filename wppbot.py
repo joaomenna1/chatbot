@@ -15,7 +15,7 @@ class wppbot:
     saudacao_noite = "Boa noite, aqui quem fala é o chatbot da Clínica Pulsar. Para continuar seu atendimento, digite seu nome completo para que possamos salvar seu contato."
 
     def __init__(self):
-        self.chrome = self.dir_path + '\chromedriver.exe'
+        self.chrome = self.dir_path + '\chromedriver1.exe'
 
         self.options = webdriver.ChromeOptions()
         self.options.add_argument(r"user-data-dir=" + self.dir_path + "\profile\wpp")
@@ -24,8 +24,9 @@ class wppbot:
     # abre o whatsapp web
     def inicia(self):
         self.driver.get('https://web.whatsapp.com/')
-        self.driver.implicitly_wait(15)
-        time.sleep(3)
+        self.driver.maximize_window()
+        self.driver.implicitly_wait(600)
+        time.sleep(5)
 
     # envia a primeira mensagem pra um contato
     def saudacao(self):
@@ -103,6 +104,7 @@ class wppbot:
         time.sleep(2)
         self.botao_enviar = self.driver.find_element_by_class_name("_1g8sv")
         self.botao_enviar.click()
+        time.sleep(2)
 
     def localizacao(self):
         self.caixa_de_mensagem = self.driver.find_element_by_class_name("_3u328")
@@ -126,6 +128,7 @@ class wppbot:
         time.sleep(2)
         self.botao_enviar = self.driver.find_element_by_class_name("_1g8sv")
         self.botao_enviar.click()
+        time.sleep(2)
 
     def procedimentos(self):
         img = self.dir_path + '\Pulsar-3.png'
@@ -140,6 +143,7 @@ class wppbot:
         time.sleep(2)
         self.botao_enviar = self.driver.find_element_by_class_name("_1g8sv")
         self.botao_enviar.click()
+        time.sleep(2)
 
     def exames_laboratoriais(self):
         img = self.dir_path + '\Pulsar-4.png'
@@ -154,30 +158,30 @@ class wppbot:
         time.sleep(2)
         self.botao_enviar = self.driver.find_element_by_class_name("_1g8sv")
         self.botao_enviar.click()
-        time.sleep(1)
+        time.sleep(2)
         # seleciona o clip pra enviar um anexo
         self.botao_clip = self.driver.find_element_by_xpath('//*[@id="main"]/header/div[3]/div/div[2]/div/span')
         self.botao_clip.click()
-        time.sleep(1)
+        time.sleep(2)
         # seleciona a opcao pra enviar contato
         self.botao_contato = self.driver.find_element_by_xpath('//*[@id="main"]/header/div[3]/div/div[2]/span/div/div/ul/li[4]/button')
         self.botao_contato.click()
-        time.sleep(1)
+        time.sleep(2)
         # procura na caixa de pesquisa pelo nome do contato
         self.caixa_contato = self.driver.find_element_by_class_name("aymnx")
         self.caixa_pesquisa = self.caixa_contato.find_element_by_class_name("_2zCfw")
         self.caixa_pesquisa.send_keys("Rb Diagnósticos - Pulsar")
-        time.sleep(1)
+        time.sleep(2)
         # clica no contato
         self.contato = self.driver.find_element_by_xpath('//span[@title = "{}"]'.format("Rb Diagnósticos - Pulsar"))
         self.contato.click()
         # envia o contato
         self.botao_visualizar = self.driver.find_element_by_class_name("_1g8sv")
         self.botao_visualizar.click()
-        time.sleep(1)
+        time.sleep(3)
         self.botao_enviar_definitivo = self.driver.find_element_by_class_name("_1g8sv")
         self.botao_enviar_definitivo.click()
-        time.sleep(1)
+        time.sleep(3)
 
     def atendimento(self):
         self.caixa_de_mensagem = self.driver.find_element_by_class_name("_3u328")
@@ -196,3 +200,6 @@ class wppbot:
         time.sleep(2)
         self.botao_enviar = self.driver.find_element_by_class_name("_3M-N-")
         self.botao_enviar.click()
+
+    def encerra(self):
+        self.driver.quit()

@@ -1,13 +1,35 @@
-2019/09/21-10:48:58.194 2e9c Reusing MANIFEST C:\Users\ACER\PycharmProjects\chatbot.py\profile\wpp\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/MANIFEST-000001
-2019/09/21-10:48:58.305 2e9c Recovering log #211
-2019/09/21-10:49:01.374 2e9c Reusing old log C:\Users\ACER\PycharmProjects\chatbot.py\profile\wpp\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/000211.log 
-2019/09/21-10:49:03.523 3160 Level-0 table #224: started
-2019/09/21-10:49:03.957 3160 Level-0 table #224: 1604861 bytes OK
-2019/09/21-10:49:04.471 3160 Delete type=0 #211
-2019/09/21-10:49:04.864 3160 Compacting 1@1 + 8@2 files
-2019/09/21-10:49:08.450 3160 Generated table #225@1: 42610 keys, 2228636 bytes
-2019/09/21-10:49:10.430 3160 Generated table #226@1: 38677 keys, 2232622 bytes
-2019/09/21-10:49:14.231 3160 Generated table #227@1: 38502 keys, 2233077 bytes
-2019/09/21-10:49:17.467 3160 Generated table #228@1: 38263 keys, 2232281 bytes
-2019/09/21-10:49:18.991 3160 Generated table #229@1: 57759 keys, 2237262 bytes
-2019/09/21-10:49:18.991 3160 compacted to: files[ 0 1 8 0 0 0 0 ]
+2019/10/09-00:52:58.249 c48 Reusing MANIFEST C:\Users\ACER\PycharmProjects\chatbot.py\profile\wpp\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/MANIFEST-000001
+2019/10/09-00:52:58.250 c48 Recovering log #272
+2019/10/09-00:52:58.385 c48 Reusing old log C:\Users\ACER\PycharmProjects\chatbot.py\profile\wpp\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/000272.log 
+2019/10/09-00:54:05.660 2f6c Level-0 table #287: started
+2019/10/09-00:54:06.175 2f6c Level-0 table #287: 1467208 bytes OK
+2019/10/09-00:54:06.237 2f6c Delete type=0 #272
+2019/10/09-00:54:40.681 2f6c Compacting 1@0 + 0@1 files
+2019/10/09-00:54:41.011 2f6c Generated table #288@0: 25731 keys, 1171272 bytes
+2019/10/09-00:54:41.079 2f6c Generated table #289@0: 3 keys, 264 bytes
+2019/10/09-00:54:41.079 2f6c Compacted 1@0 + 0@1 files => 1171536 bytes
+2019/10/09-00:54:41.145 2f6c compacted to: files[ 0 2 10 0 0 0 0 ]
+2019/10/09-00:54:41.152 2f6c Delete type=2 #287
+2019/10/09-00:55:20.895 2f6c Compacting 1@1 + 9@2 files
+2019/10/09-00:55:21.829 2f6c Generated table #290@1: 43108 keys, 2230238 bytes
+2019/10/09-00:55:22.592 2f6c Generated table #291@1: 38711 keys, 2233386 bytes
+2019/10/09-00:55:23.323 2f6c Generated table #292@1: 38471 keys, 2234116 bytes
+2019/10/09-00:55:24.121 2f6c Generated table #293@1: 38467 keys, 2233745 bytes
+2019/10/09-00:55:24.796 2f6c Generated table #294@1: 38528 keys, 2234019 bytes
+2019/10/09-00:55:25.646 2f6c Generated table #295@1: 64046 keys, 2238845 bytes
+2019/10/09-00:55:26.496 2f6c Generated table #296@1: 92169 keys, 2243233 bytes
+2019/10/09-00:55:27.253 2f6c Generated table #297@1: 19950 keys, 2639705 bytes
+2019/10/09-00:55:28.489 2f6c Generated table #298@1: 714 keys, 2794001 bytes
+2019/10/09-00:55:28.932 2f6c Generated table #299@1: 401 keys, 1025264 bytes
+2019/10/09-00:55:28.932 2f6c Compacted 1@1 + 9@2 files => 22106552 bytes
+2019/10/09-00:55:29.007 2f6c compacted to: files[ 0 1 11 0 0 0 0 ]
+2019/10/09-00:55:29.011 2f6c Delete type=2 #275
+2019/10/09-00:55:29.011 2f6c Delete type=2 #276
+2019/10/09-00:55:29.011 2f6c Delete type=2 #277
+2019/10/09-00:55:29.011 2f6c Delete type=2 #278
+2019/10/09-00:55:29.011 2f6c Delete type=2 #279
+2019/10/09-00:55:29.011 2f6c Delete type=2 #280
+2019/10/09-00:55:29.013 2f6c Delete type=2 #281
+2019/10/09-00:55:29.015 2f6c Delete type=2 #282
+2019/10/09-00:55:29.017 2f6c Delete type=2 #283
+2019/10/09-00:55:29.017 2f6c Delete type=2 #288
